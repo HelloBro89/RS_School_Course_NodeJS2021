@@ -1,27 +1,27 @@
-const DB = require('./board_dataBase');
+const { DBboards } = require('../db');
 
-const getAllBoards = async () => DB;
+const getAllBoards = async () => DBboards;
 
 const getBoardByID = async id => {
-  const test = DB.find(el => el.id === id);
+  const test = DBboards.find(el => el.id === id);
   return test;
 };
 
 const createBoard = async board => {
-    DB.push(board);
+  DBboards.push(board);
     return board;
 };
 
 const updateBoard = async (id, body) => {
-   const boardIndex = DB.findIndex(el => el.id === id);
-   DB[boardIndex] = boardIndex !== -1 ? body : DB[boardIndex];
-   return DB[boardIndex];
+   const boardIndex = DBboards.findIndex(el => el.id === id);
+   DBboards[boardIndex] = boardIndex !== -1 ? body : DBboards[boardIndex];
+   return DBboards[boardIndex];
 };
 
 const deleteBoard = async id => {
-    const boardIndex = DB.findIndex(el => el.id === id);
-    const board = DB[boardIndex];
-    DB.splice(boardIndex, 1);
+    const boardIndex = DBboards.findIndex(el => el.id === id);
+    const board = DBboards[boardIndex];
+    DBboards.splice(boardIndex, 1);
 
    return board;
 }
