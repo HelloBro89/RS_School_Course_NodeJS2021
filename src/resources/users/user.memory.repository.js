@@ -1,24 +1,24 @@
 const DB = require("./user_dataBase");
 
-const getAll = async () => DB;
+const getAllUsers = async () => DB;
 
-const userID = async id => DB.filter(el => el.id === id)[0] ;
+const getUserByID = async id => DB.find(el => el.id === id);
 
 const createUser = async user => {
   DB.push(user);
-  return userID(user.id);
+  return user;
 };
 
-const changeUser = async (id, body) => {
+const updateUser = async (id, body) => {
   const userIndex = DB.findIndex(el => el.id === id);
 
   DB[userIndex] = userIndex !== -1 ?  body : DB[userIndex];
   return DB[userIndex];
 };
 
-const deletedUser = async id => {
+const deleteUser = async id => {
   const userIndex = DB.findIndex(el => el.id === id);
   return DB.splice(userIndex, 1);
 }
 
-module.exports = { getAll, userID, createUser, changeUser, deletedUser };
+module.exports = { getAllUsers, getUserByID, createUser, updateUser, deleteUser };
