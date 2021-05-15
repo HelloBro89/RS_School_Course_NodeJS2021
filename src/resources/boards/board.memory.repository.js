@@ -3,8 +3,8 @@ const { DBboards } = require('../db');
 const getAllBoards = async () => DBboards;
 
 const getBoardByID = async id => {
-  const test = DBboards.find(el => el.id === id);
-  return test;
+  const neededBoard = DBboards.find(el => el.id === id);
+  return neededBoard;
 };
 
 const createBoard = async board => {

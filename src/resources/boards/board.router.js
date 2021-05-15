@@ -3,6 +3,7 @@ const Board = require('./board.model');
 const boardsService = require('./board.service');
 const taskRouter = require('../tasks/task.router');
 
+
 router.use('/:boardId/tasks', taskRouter);
 
 router.route('/').get(async (req, res) => {
@@ -35,9 +36,7 @@ router.route('/:boardId').put(async (req, res) => {
 });
 
 router.route('/:boardId').delete(async (req, res) => {
-
     const id = req.params.boardId;
-   
     const deletedBoard = await boardsService.deleteBoard(id);
 
     res.status(200).json(deletedBoard);
