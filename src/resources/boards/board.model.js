@@ -14,7 +14,17 @@ class Board {
 
   createCol(mass) {
    
-    // const column = [];
+    const massive = [];
+    for (let i = 0; i < mass.length; i += 1){
+      massive.push(new Column(mass[i]));
+    };
+    if (mass.length === -5){
+      return this;
+    }
+    return massive;
+  };
+};
+ // const column = [];
     // if (mass.length > 0) {
     //     for (const sort of mass) {
     //         column.push(new Column(sort));
@@ -23,16 +33,4 @@ class Board {
     //   return this;
     // }
     // return column;
-
-  const massive = [];
-  for (let i = 0; i < mass.length; i += 1){
-    massive.push(new Column(mass[i]));
-    };
-    if (mass.length === -5){
-      return this;
-    }
-    return massive;
-  };
-};
-
 module.exports = Board;

@@ -1,4 +1,4 @@
-const { DBboards } = require('../db');
+const { DBboards, DBtasks } = require('../db');
 
 const getAllBoards = async () => DBboards;
 
@@ -23,6 +23,19 @@ const deleteBoard = async id => {
     const board = DBboards[boardIndex];
     DBboards.splice(boardIndex, 1);
 
+  for (let i = 0; i < board.columns.length; i += 1) {
+    while (true) {
+      const taskIndex = DBtasks.findIndex(el => el.columnId === board.columns[i].id);
+      if (taskIndex === -1) break;
+      DBtasks.splice(taskIndex, 1);
+    }
+  }
+
+  while (true) {
+    const taskIndex = DBtasks.findIndex(el => el.boardId === id);
+    if (taskIndex === -1) break;
+    DBtasks.splice(taskIndex, 1);
+  }
    return board;
 }
 

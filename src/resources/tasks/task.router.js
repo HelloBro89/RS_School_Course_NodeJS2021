@@ -2,38 +2,41 @@ const router = require('express').Router();
 const Task = require('./task.model');
 const tasksService = require('./task.service');
 
-
-router.route('/').get( async (req, res) =>{
+router.route('/:boardId/tasks').get( async (req, res) =>{
 
     const tasks = await tasksService.getAllTasks();
-    
     res.status(200).json(tasks);
 });
 
-router.route('/:taskId').get(async (req, res) => {
+router.route('/:boardId/tasks/:taskId').get(async (req, res) => {
     
     const id = req.params.taskId;
     const taskdID = await tasksService.getTaskByID(id);
-    
-    if (!taskdID){
+ 
+    if (taskdID === undefined){
         res.status(404).json()
        } else {
         res.status(200).json(taskdID)
        };
 });
 
-router.route('/').post( async (req, res) =>{
+router.route('/:boardId/tasks').post( async (req, res) =>{
 
-    // console.log(req.body);
-    // const userId = req.body.userId !== null ? req.body.userId : null;
-
-    const boardId = req.originalUrl.slice(8, -6);
-    const addedTask = await tasksService.createTask(new Task({ boardId }));
-        
+    // req.body.boardId = req.params.boardId;
+  
+    const addedTask = await tasksService.createTask(new Task({
+        boardId: req.params.boardId,
+        title:  req.body.title,
+        order:  req.body.order,
+        description: req.body.description,
+        userId:  req.body.userId,
+        columnId: req.body.columnId
+    }));
+ 
     res.status(201).json(addedTask);
 });
 
-router.route('/:taskId').put(async (req, res) => {
+router.route('/:boardId/tasks/:taskId').put(async (req, res) => {
 
     const id = req.params.taskId;
     const {body} = req;
@@ -42,11 +45,11 @@ router.route('/:taskId').put(async (req, res) => {
     res.status(200).json(changedTask);
 });
 
-router.route('/:taskId').delete(async (req, res) => {
+router.route('/:boardId/tasks/:taskId').delete(async (req, res) => {
 
-    const id = req.params.boardId;
+    const id = req.params.taskId;
     const deletedTask = await tasksService.deleteTask(id);
-
+ 
     res.status(200).json(deletedTask);
 });
 
