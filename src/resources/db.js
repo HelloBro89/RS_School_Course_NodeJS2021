@@ -2,4 +2,6 @@ const DBusers = [];
 
 const DBboards = [];
 
-module.exports = { DBusers, DBboards };
+const DBtasks = [];
+
+module.exports = { DBusers, DBboards, DBtasks };

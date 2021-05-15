@@ -1,7 +1,5 @@
 const { DBusers } = require("../db");
 
-console.log(DBusers)
-
 const getAllUsers = async () => DBusers;
 
 const getUserByID = async id => DBusers.find(el => el.id === id);
@@ -21,6 +19,6 @@ const updateUser = async (id, body) => {
 const deleteUser = async id => {
   const userIndex = DBusers.findIndex(el => el.id === id);
   return DBusers.splice(userIndex, 1);
-}
+};
 
 module.exports = { getAllUsers, getUserByID, createUser, updateUser, deleteUser };
