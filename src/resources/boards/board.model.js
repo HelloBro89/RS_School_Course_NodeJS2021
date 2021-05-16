@@ -12,25 +12,16 @@ class Board {
     this.columns = this.createCol(columns);
   }
 
+  // eslint-disable-next-line class-methods-use-this
   createCol(mass) {
    
     const massive = [];
-    for (let i = 0; i < mass.length; i += 1){
+    // eslint-disable-next-line no-plusplus
+    for (let i = 0; i < mass.length; i++){
       massive.push(new Column(mass[i]));
     };
-    if (mass.length === -5){
-      return this;
-    }
     return massive;
   };
 };
- // const column = [];
-    // if (mass.length > 0) {
-    //     for (const sort of mass) {
-    //         column.push(new Column(sort));
-    //     }
-    // } else {
-    //   return this;
-    // }
-    // return column;
+ 
 module.exports = Board;

@@ -22,16 +22,8 @@ router.route('/:boardId/tasks/:taskId').get(async (req, res) => {
 
 router.route('/:boardId/tasks').post( async (req, res) =>{
 
-    // req.body.boardId = req.params.boardId;
-  
-    const addedTask = await tasksService.createTask(new Task({
-        boardId: req.params.boardId,
-        title:  req.body.title,
-        order:  req.body.order,
-        description: req.body.description,
-        userId:  req.body.userId,
-        columnId: req.body.columnId
-    }));
+    req.body.boardId = req.params.boardId;
+    const addedTask = await tasksService.createTask(new Task( req.body ));
  
     res.status(201).json(addedTask);
 });

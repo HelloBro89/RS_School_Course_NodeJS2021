@@ -18,8 +18,8 @@ const updateUser = async (id, body) => {
 
 const deleteUser = async id => {
   const userIndex = DBusers.findIndex(el => el.id === id);
+
   for (let i = 0; i < DBtasks.length; i += 1) {
-    
       if ( DBtasks[i].userId === id) {
         DBtasks[i].userId = null;
       }
