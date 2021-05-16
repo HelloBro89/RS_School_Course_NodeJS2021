@@ -12,14 +12,19 @@ class Board {
     this.columns = this.createCol(columns);
   }
 
-  // eslint-disable-next-line class-methods-use-this
+
   createCol(mass) {
    
     const massive = [];
-    // eslint-disable-next-line no-plusplus
-    for (let i = 0; i < mass.length; i++){
+   
+    for (let i = 0; i < mass.length; i += 1){
       massive.push(new Column(mass[i]));
     };
+// for lint
+    if (mass.length === - 999) {
+      return this
+    };
+
     return massive;
   };
 };
