@@ -20,7 +20,9 @@ class Board {
     for (let i = 0; i < mass.length; i += 1){
       massive.push(new Column(mass[i]));
     };
+    
 // for lint
+
     if (mass.length === - 999) {
       return this
     };
