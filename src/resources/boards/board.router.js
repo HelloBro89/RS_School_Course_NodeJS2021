@@ -3,7 +3,7 @@ const Board = require('./board.model');
 const boardsService = require('./board.service');
 const taskRouter = require('../tasks/task.router');
 
-router.use('/', taskRouter);
+router.use('/:boardId/tasks', taskRouter);
 
 router.route('/').get(async (req, res) => {
     const boards = await boardsService.getAllBoards();

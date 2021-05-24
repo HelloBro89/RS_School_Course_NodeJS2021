@@ -1,5 +1,4 @@
 const uuid = require('uuid');
-const Column = require('./board.column.model');
 
 class Board {
   constructor({
@@ -9,26 +8,8 @@ class Board {
   } = {}) {
     this.id = id;
     this.title = title;
-    this.columns = this.createCol(columns);
+    this.columns = columns;
   }
-
-
-  createCol(mass) {
-   
-    const massive = [];
-   
-    for (let i = 0; i < mass.length; i += 1){
-      massive.push(new Column(mass[i]));
-    };
-    
-// for lint
-
-    if (mass.length === - 999) {
-      return this
-    };
-
-    return massive;
-  };
 };
  
 module.exports = Board;
