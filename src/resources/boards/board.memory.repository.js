@@ -29,8 +29,8 @@ const createBoard = async board => {
 /**
  * function searches for a board by ID and changes it
  * @param {string} id - a first term, searches board by this parametr
- * @param {Object} body - a second term, changes the board to the properties of this parameter 
- * @returns {Object} - returns(body) the changed board
+ * @param {object} body - a second term, changes the board to the properties of this parameter 
+ * @returns {object} - returns(body) the changed board
  */
 const updateBoard = async (id, body) => {
    const boardIndex = DBboards.findIndex(el => el.id === id);

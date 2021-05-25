@@ -39,9 +39,9 @@ const updateTask = async (id, body) => {
 };
 
 /**
- * function searches the board by ID and removes him, and its tasks
+ * function searches the task by ID and removes him
  * @param {string} id - searches board by this parameter
- * @returns {Object} - returns the deleted board
+ * @returns {Object} - returns the deleted task
  */
 const deleteTask = async id => {
     const taskIndex = DBtasks.findIndex(el => el.id === id);
