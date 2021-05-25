@@ -13,7 +13,6 @@ router.route('/').get(async (req, res) => {
 router.route('/:boardId').get(async (req, res) => {
     const id = req.params.boardId;
     const boardID = await boardsService.getBoardByID(id);
-    
     if (!boardID){
         res.status(404).json()
        } else {
@@ -37,7 +36,6 @@ router.route('/:boardId').put(async (req, res) => {
 router.route('/:boardId').delete(async (req, res) => {
     const id = req.params.boardId;
     const deletedBoard = await boardsService.deleteBoard(id);
-
     res.status(200).json(deletedBoard);
 });
 
