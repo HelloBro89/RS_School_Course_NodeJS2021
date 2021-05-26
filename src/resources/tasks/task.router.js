@@ -23,7 +23,6 @@ router.route('/').post( async (req, res) =>{
 
     req.body.boardId = req.params.boardId;
     const addedTask = await tasksService.createdTask(new Task( req.body ));
- 
     res.status(201).json(addedTask);
 });
 
