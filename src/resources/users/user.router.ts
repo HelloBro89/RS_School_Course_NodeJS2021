@@ -28,6 +28,7 @@ routerUser.route('/:userId').put(async (req: Request, res: Response) => {
   const { body } = req;
   const id = req.params['userId'];
   if (!id) return res.status(200).json({});
+
   const changedUser = await usersService.updatedUser(id, body);
   if (!changedUser) return res.status(200).json({});
   return res.status(200).json(User.toResponse(changedUser));

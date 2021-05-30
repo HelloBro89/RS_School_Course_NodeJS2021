@@ -30,19 +30,12 @@ const updateUser = async (
 const deleteUser = async (id: string) => {
   const userIndex = DBusers.findIndex((el) => el.id === id);
 
-
   for (let i = 0; i < DBtasks.length; i += 1) {
     const taskIndex = DBtasks.findIndex((el) => el.userId === id);
     if (taskIndex !== -1) {
       DBtasks[taskIndex] = { ...DBtasks[taskIndex], userId: null };
     }
   }
-
-  // const taskIndex = DBtasks.findIndex((el) => el.userId === id);
-  // if (taskIndex !== -1) {
-  //   // DBtasks[taskIndex].userId = null;
-  //   DBtasks[taskIndex] = { ...DBtasks[taskIndex], userId: null };
-  // }
 
   const deletedObj: { id?: string | undefined; name?: string | undefined; login?: string | undefined; password?: string | undefined; } = { ...DBusers[userIndex] };
 
