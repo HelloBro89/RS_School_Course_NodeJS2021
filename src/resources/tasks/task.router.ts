@@ -1,4 +1,3 @@
-// const taskRouter = require('express').Router({ mergeParams: true });
 import { Request, Router } from 'express';
 import { Task } from './task.model';
 import { tasksService } from './task.service';

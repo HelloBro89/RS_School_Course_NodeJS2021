@@ -24,33 +24,31 @@ const updateUser = async (
     DBusers[userIndex] = body;
   }
 
-  // DBusers[userIndex] = userIndex !== -1 ? body : DBusers[userIndex];
-
   return DBusers[userIndex];
 };
 
 const deleteUser = async (id: string) => {
   const userIndex = DBusers.findIndex((el) => el.id === id);
-  // console.log('***************************');
-  // console.log(DBtasks);
-  // console.log('***************************');
-  DBtasks.map((task) => {
-    if (task.userId === id) {
-      task.userId = null;
+
+
+  for (let i = 0; i < DBtasks.length; i += 1) {
+    const taskIndex = DBtasks.findIndex((el) => el.userId === id);
+    if (taskIndex !== -1) {
+      DBtasks[taskIndex] = { ...DBtasks[taskIndex], userId: null };
     }
-    return task;
-  });
-  // console.log('________________________-');
-  // console.log(DBtasks);
-  // console.log('________________________-');
-  // for (let i = 0; i < DBtasks.length; i += 1) {
+  }
 
-  //   if (DBtasks[i].userId === id) {
-  //     DBtasks[i].userId = null;
-  //   }
-  // };
+  // const taskIndex = DBtasks.findIndex((el) => el.userId === id);
+  // if (taskIndex !== -1) {
+  //   // DBtasks[taskIndex].userId = null;
+  //   DBtasks[taskIndex] = { ...DBtasks[taskIndex], userId: null };
+  // }
 
-  return DBusers.splice(userIndex, 1);
+  const deletedObj: { id?: string | undefined; name?: string | undefined; login?: string | undefined; password?: string | undefined; } = { ...DBusers[userIndex] };
+
+  DBusers.splice(userIndex, 1);
+
+  return deletedObj;
 };
 
 export const usersRepo = {

@@ -19,6 +19,16 @@
     "paths": [
       "src"
     ],
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    },
     "node": {
       "tryExtensions": [
         ".js",
@@ -48,9 +58,6 @@
     "linebreak-style": "off",
     "node/no-unsupported-features/es-syntax": "off",
     "no-underscore-dangle": "off",
-    "import/prefer-default-export": "off",
-    "import/no-unresolved": "off",
-    "no-param-reassign": "off",
-    "dot-notation": "off"
+    "import/prefer-default-export": "off"
   }
 }
