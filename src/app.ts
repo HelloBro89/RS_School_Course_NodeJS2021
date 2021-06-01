@@ -3,6 +3,7 @@ import SwaggerUI from 'swagger-ui-express';
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import YAML from 'yamljs';
+import { finished } from 'stream'
 import { routerUser } from './resources/users/user.router';
 import { routerBoard } from './resources/boards/board.router';
 
@@ -21,9 +22,25 @@ app.use('/', (req, res, next) => {
     return;
   }
   next();
+
 });
 
+app.use((req, res, next) => {
+  const { query } = req;
+  const { url } = req;
+  const { body } = req;
+
+  next();
+
+  finished(res, () => {
+    const { statusCode } = res;
+    console.log(`URL: ${url} \n Query Parameters: ${JSON.stringify(query)} \n Body: ${JSON.stringify(body)} \n StatusCode: ${statusCode}`);
+  });
+});
+
+
 app.use('/users', routerUser);
+
 app.use('/boards', routerBoard);
 
 export { app };
