@@ -1,11 +1,13 @@
-import Express from 'express';
+import Express, { Request, Response, NextFunction } from 'express';
+
 import SwaggerUI from 'swagger-ui-express';
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import YAML from 'yamljs';
-import { finished } from 'stream'
+import { finished } from 'stream';
 import { routerUser } from './resources/users/user.router';
 import { routerBoard } from './resources/boards/board.router';
+
 
 const app = Express();
 const swaggerDocument = YAML.load(
@@ -25,6 +27,7 @@ app.use('/', (req, res, next) => {
 
 });
 
+
 app.use((req, res, next) => {
   const { query } = req;
   const { url } = req;
@@ -38,9 +41,14 @@ app.use((req, res, next) => {
   });
 });
 
-
 app.use('/users', routerUser);
-
 app.use('/boards', routerBoard);
+
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+app.use((err: { message: string; stack: string }, _req: Request, res: Response, _next: NextFunction) => {
+  console.log(err.stack);
+  res.status(500).send("Internal Server Error");
+});
 
 export { app };
