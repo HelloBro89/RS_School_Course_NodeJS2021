@@ -1,4 +1,4 @@
-import Express, { Request, Response, NextFunction } from 'express';
+import Express from 'express';
 import SwaggerUI from 'swagger-ui-express';
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -6,6 +6,7 @@ import YAML from 'yamljs';
 import { finished } from 'stream';
 import { routerUser } from './resources/users/user.router';
 import { routerBoard } from './resources/boards/board.router';
+import errorHandler from './errorHandler/error.handler'
 
 const app = Express();
 const swaggerDocument = YAML.load(
@@ -13,10 +14,16 @@ const swaggerDocument = YAML.load(
 );
 
 process.on('uncaughtException', (error: { message: string; stack: string; }) => {
-  console.error(`captured error: ${error.stack}`);
+  console.error(`uncaughtException error: ${error.stack}`);
   // fs.writeFileSync...
   process.exit(1);
 });
+
+process.on('unhandledRejection', (reason: { message: string; stack: string; },) => {
+  // fs.writeFileSync...
+  console.error(`Unhandled rejection detected: ${reason.stack}`);
+});
+
 
 app.use(Express.json());
 
@@ -46,12 +53,6 @@ app.use((req, res, next) => {
 
 app.use('/users', routerUser);
 app.use('/boards', routerBoard);
-
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-app.use((err: { message: string; stack: string }, _req: Request, res: Response, _next: NextFunction) => {
-  console.log(err.stack);
-  res.status(500).send("Internal Server Error");
-});
+app.use(errorHandler);
 
 export { app };
