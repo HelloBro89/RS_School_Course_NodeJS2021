@@ -11,9 +11,9 @@ routerUser.route('/').get(async (_req: Request, res: Response) => {
 
 routerUser.route('/:userId').get(async (req: Request, res: Response) => {
   const id = req.params['userId'];
-  if (!id) return res.status(200).json({});
+  if (!id) return res.status(404).json({});
   const userID = await usersService.userByID(id);
-  if (!userID) return res.status(200).json({});
+  if (!userID) return res.status(404).json({});
 
   return res.status(200).json(User.toResponse(userID));
 });
