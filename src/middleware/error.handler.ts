@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import logger from '../errors/logger';
+import logger from './logger';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default (err: Error, _req: Request, res: Response, _next: NextFunction) => {
     // fs.writeFileSync...

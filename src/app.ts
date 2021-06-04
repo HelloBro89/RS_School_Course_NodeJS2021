@@ -6,8 +6,9 @@ import YAML from 'yamljs';
 import { finished } from 'stream';
 import { routerUser } from './resources/users/user.router';
 import { routerBoard } from './resources/boards/board.router';
-import errorHandler from './errorHandler/error.handler';
-import logger from './errors/logger';
+import errorHandler from './middleware/error.handler';
+import logger from './middleware/logger';
+
 
 const app = Express();
 const swaggerDocument = YAML.load(
