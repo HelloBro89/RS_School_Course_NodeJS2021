@@ -1,16 +1,21 @@
 import fs from 'fs';
+// import path, { dirname } from 'path';
+// import { fileURLToPath } from 'url';
+// path.join(dirname(fileURLToPath(import.meta.url))) 
+
+// const writeableStreamLogs = fs.createWriteStream('D:/WorkJS/RS_School_Course_NodeJS2021/build/errors/log.txt'/* , { flags: "a" } */);
+// const writeableStreamErrors = fs.createWriteStream('D:/WorkJS/RS_School_Course_NodeJS2021/build/errors/errors.txt');
 
 export default (text: string, err?: Error) => {
     if (err) {
-        console.log(`${text} ${err.stack}`);
-        fs.writeFileSync('logs.txt', `${text} ${err.stack}`);
-        // fs.writeFile('logs.txt', "Hello");
-
+        console.error(`${text} ${err.stack}`);
+        fs.appendFileSync('D:/WorkJS/RS_School_Course_NodeJS2021/build/errors/errors.txt', `${text} ${err.stack}`);
+        // fs.writeFileSync('D:/WorkJS/RS_School_Course_NodeJS2021/build/errors/errors.txt', `${text} ${err.stack}`);
+        // writeableStreamErrors.write(`${text} ${err.stack}`);
     } else {
         console.log(text);
-        // console.log('TESTTEST')
-        // let writeableStream = fs.createWriteStream("test.txt");
-        // writeableStream.write("Привет мир!");
-        // writeableStream.end("Завершение записи");
+        fs.appendFileSync("D:/WorkJS/RS_School_Course_NodeJS2021/build/errors/log.txt", `${text}`);
+        // fs.writeFileSync("D:/WorkJS/RS_School_Course_NodeJS2021/build/errors/log.txt", `${text}`);
+        // writeableStreamLogs.write(text);
     }
 };
