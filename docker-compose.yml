@@ -1,19 +1,31 @@
 version: '3.3'
+
 services:
   node:
     build: .
+    networks:
+      - custom-net
     ports:
       - ${PORT}:${PORT}
     depends_on:
       - postgres
+    restart: on-failure
     environment:
       PORT: ${PORT}
+
   postgres:
     build: ./database/
+    networks:
+      - custom-net
     ports:
         - ${POSTGRES_PORT}:${POSTGRES_PORT}
+    restart: on-failure
     environment:
         POSTGRES_USER: ${POSTGRES_USER}
         POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}   
         POSTGRES_DB: ${POSTGRES_DB}
         POSTGRES_PORT: ${POSTGRES_PORT}
+
+networks:
+  custom-net:
+    driver: bridge
