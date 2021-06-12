@@ -3,6 +3,8 @@ FROM node:14.17-alpine
 WORKDIR /app
 COPY package*.json .
 RUN npm install
+RUN npm install -g typescript
 COPY . .
-EXPOSE 8080
+RUN tsc
+# EXPOSE 8080
 CMD [ "npm", "start" ]

@@ -11,8 +11,8 @@ services:
       - postgres
     restart: on-failure
     volumes:
-      # - ./src:/app/src
-      - logs:/app/logs
+       - ./src:/app/src
+      - ./logs:/app/logs
     environment:
       PORT: ${PORT}
 
@@ -37,5 +37,5 @@ networks:
 
 volumes:
   pgdata:
-  src:
-  logs:
+  # src:
+  # logs:
