@@ -1,7 +1,7 @@
 import Express from 'express';
 import SwaggerUI from 'swagger-ui-express';
-import path, { dirname } from 'path';
-import { fileURLToPath } from 'url';
+import path from 'path';
+// import { fileURLToPath } from 'url';
 import YAML from 'yamljs';
 import { finished } from 'stream';
 import { routerUser } from './resources/users/user.router';
@@ -12,7 +12,7 @@ import { uncaughtException, unhandledRejection } from './middleware/events';
 
 const app = Express();
 const swaggerDocument = YAML.load(
-  path.join(dirname(fileURLToPath(import.meta.url)), '../doc/api.yaml')
+  path.join(('./doc/api.yaml'))
 );
 
 app.use(Express.json());

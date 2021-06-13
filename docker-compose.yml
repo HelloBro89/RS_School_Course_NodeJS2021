@@ -2,6 +2,7 @@ version: '3'
 
 services:
   node:
+    image: hellobro/node
     build: .
     networks:
       - custom-net
@@ -11,12 +12,13 @@ services:
       - postgres
     restart: on-failure
     volumes:
-       - ./src:/app/src
+      - .:/app
       - ./logs:/app/logs
     environment:
       PORT: ${PORT}
 
   postgres:
+    image: hellobro/postgres
     build: ./database/
     networks:
       - custom-net
@@ -38,4 +40,4 @@ networks:
 volumes:
   pgdata:
   # src:
-  # logs:
+  logs: 
