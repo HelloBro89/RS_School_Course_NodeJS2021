@@ -22,7 +22,7 @@ app.use('/', (req, res, next) => {
   // test error 500
   // throw new Error("Ops!!!");
   if (req.originalUrl === '/') {
-    res.send('Service is ddd!');
+    res.send('Service is running!');
     return;
   }
   next();
