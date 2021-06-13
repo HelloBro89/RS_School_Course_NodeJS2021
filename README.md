@@ -2,6 +2,11 @@
 
 1. docker-compose up --build
 
+## Инструкция по запуску:
+- склонируй репозиторий git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
+- перейди в нужную ветку git checkout docker-basics
+- выполни установку зависимостей npm i
+- создай images и запусти на их основе контейнеры docker-compose up --build
 
 # RS School REST service
 
