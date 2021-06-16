@@ -1,13 +1,12 @@
 import dotenv from 'dotenv';
-import path, { dirname } from 'path';
-// import { fileURLToPath } from 'url';
+import path from 'path';
+
 
 dotenv.config({
-  path: path.join(dirname('../../')),
+  path: path.join(__dirname, '../../.env'),
 });
 
 export const config = {
-  // const { PORT } = process.env,
   PORT: process.env['PORT'],
   NODE_ENV: process.env['NODE_ENV'],
   MONGO_CONNECTION_STRING: process.env['MONGO_CONNECTION_STRING'],

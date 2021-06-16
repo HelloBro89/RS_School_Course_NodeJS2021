@@ -11,9 +11,8 @@ import { recordingLogs } from './logger/logger';
 import { uncaughtException, unhandledRejection } from './middleware/events';
 
 const app = Express();
-const swaggerDocument = YAML.load(
-  path.join(('./doc/api.yaml'))
-);
+
+const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 
 app.use(Express.json());
 app.use('/doc', SwaggerUI.serve, SwaggerUI.setup(swaggerDocument));
