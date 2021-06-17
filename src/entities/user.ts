@@ -1,13 +1,19 @@
+import { Entity, Column,/*  PrimaryGeneratedColumn, */ PrimaryColumn } from 'typeorm';
 import { v4 as uuid } from 'uuid';
 
+@Entity({ name: 'users' })
 class User {
-  id: string;
+  @PrimaryColumn('varchar', { length: 50 })
+  id!: string;
 
-  name: string;
+  @Column('varchar', { length: 50 })
+  name!: string;
 
-  login: string;
+  @Column('varchar', { length: 50 })
+  login!: string;
 
-  password: string;
+  @Column('varchar', { length: 50 })
+  password!: string;
 
   constructor({
     id = uuid(),

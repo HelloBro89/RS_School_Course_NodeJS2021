@@ -10,7 +10,7 @@ dotenv.config({
 // need to add variable
 export const config = {
     type: "postgres",
-    name: 'MyName',
+    name: 'default',
     host: process.env['POSTGRES_HOST'],
     port: process.env['POSTGRES_PORT'],
     username: process.env['POSTGRES_USER'],
@@ -20,4 +20,5 @@ export const config = {
     autoReconnect: true,
     reconnectTries: Number.MAX_VALUE,
     reconnectionInterval: 1000,
+    entities: ['src/entities/**/*.ts'],
 } as ConnectionOptions;

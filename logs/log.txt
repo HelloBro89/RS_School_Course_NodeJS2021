@@ -1,0 +1,461 @@
+URL: /favicon.ico; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 304; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/8cc8acf0-aba7-4932-8d85-627b4fea9ee7; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/8cc8acf0-aba7-4932-8d85-627b4fea9ee7; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/153dbb62-fea0-44d7-a58a-6e4fbf36f8ad; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/0fefbc19-a67f-4858-9524-051a254fc7c5; 
+ Query Parameters: {}; 
+ Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"0fefbc19-a67f-4858-9524-051a254fc7c5"};
+StatusCode: 200; 
+
+URL: /users/0fefbc19-a67f-4858-9524-051a254fc7c5; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/0fefbc19-a67f-4858-9524-051a254fc7c5; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/e93c0bff-834e-42a6-8469-b3ad1b644abb; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/073fe6a3-95c9-485c-b09b-ba361df1fe26/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"627d96a3-c8f8-430c-ab4a-c6adc55a38ec","boardId":"073fe6a3-95c9-485c-b09b-ba361df1fe26"};
+StatusCode: 201; 
+
+URL: /boards/073fe6a3-95c9-485c-b09b-ba361df1fe26/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"627d96a3-c8f8-430c-ab4a-c6adc55a38ec","boardId":"073fe6a3-95c9-485c-b09b-ba361df1fe26"};
+StatusCode: 201; 
+
+URL: /users/627d96a3-c8f8-430c-ab4a-c6adc55a38ec; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/073fe6a3-95c9-485c-b09b-ba361df1fe26/tasks/736055a2-130c-446e-9267-be2004bb2b49; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/68ec2490-4fee-4453-b0b2-3438556e74c5; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/6b334f60-64ec-423d-97ec-6f387b482410; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/5e8a1733-08d6-492d-b053-db7441f8004f; 
+ Query Parameters: {}; 
+ Body: {"id":"5e8a1733-08d6-492d-b053-db7441f8004f","title":"Autotest updated board","columns":[{"id":"5b959ae6-788b-47fd-a57e-64753872ada0","title":"Backlog","order":1},{"id":"2e8e13c4-a619-4a51-8842-440faf58ff11","title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+URL: /boards/5e8a1733-08d6-492d-b053-db7441f8004f; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/5e8a1733-08d6-492d-b053-db7441f8004f; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/b2a7fc78-d405-434b-af6d-cda6ae97a49b; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/b2a7fc78-d405-434b-af6d-cda6ae97a49b; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"e30c56ac-9745-440e-a58c-cd0600fdfaf8","userId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"e30c56ac-9745-440e-a58c-cd0600fdfaf8","userId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"e30c56ac-9745-440e-a58c-cd0600fdfaf8","userId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"e30c56ac-9745-440e-a58c-cd0600fdfaf8","userId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"e30c56ac-9745-440e-a58c-cd0600fdfaf8","userId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks/77d9d108-62da-461b-89fa-9a8ea8ae6929; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks/5f8bf4f8-b1b9-46fa-a117-e18d0dbd0f95; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks/fd5d0939-e541-4e9e-9a68-91ad209ecfb4; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks/9c8c2dd7-320d-48de-8ce4-a1a3e86170c5; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks/1dcc2804-a221-4eca-9e8e-6ce0adcb3914; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks/5f8bf4f8-b1b9-46fa-a117-e18d0dbd0f95; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks/fd5d0939-e541-4e9e-9a68-91ad209ecfb4; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks/9c8c2dd7-320d-48de-8ce4-a1a3e86170c5; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks/77d9d108-62da-461b-89fa-9a8ea8ae6929; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards/e30c56ac-9745-440e-a58c-cd0600fdfaf8/tasks/1dcc2804-a221-4eca-9e8e-6ce0adcb3914; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards/68ec2490-4fee-4453-b0b2-3438556e74c5; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/073fe6a3-95c9-485c-b09b-ba361df1fe26/tasks/736055a2-130c-446e-9267-be2004bb2b49; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks/5826c301-5cd2-42a7-b16f-1de3c9bd7fcb; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks/60e63bd0-db35-4fa8-acb2-90fa83343ab9; 
+ Query Parameters: {}; 
+ Body: {"id":"60e63bd0-db35-4fa8-acb2-90fa83343ab9","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"7f6a043e-f39a-4700-90f5-1d40e4565bfe","columnId":null};
+StatusCode: 200; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks/60e63bd0-db35-4fa8-acb2-90fa83343ab9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks/403f7de2-f5c6-4f46-8a8e-45c8a0f421e7; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks/403f7de2-f5c6-4f46-8a8e-45c8a0f421e7; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe/tasks/403f7de2-f5c6-4f46-8a8e-45c8a0f421e7; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards/7f6a043e-f39a-4700-90f5-1d40e4565bfe; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+

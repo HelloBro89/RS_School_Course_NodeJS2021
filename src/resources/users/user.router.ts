@@ -1,5 +1,5 @@
 import { Request, Response, Router } from 'express';
-import { User } from './user.model';
+import { User } from '../../entities/user';
 import { usersService } from './user.service';
 
 const routerUser = Router();
@@ -20,7 +20,7 @@ routerUser.route('/:userId').get(async (req: Request, res: Response) => {
 
 routerUser.route('/').post(async (req: Request, res: Response) => {
 
-  const addedUser = await usersService.createdUser(new User(req.body));
+  const addedUser = await usersService.createdUser(req.body);
   res.status(201).json(User.toResponse(addedUser));
 });
 

@@ -22,16 +22,16 @@ const connectionDB = async () => {
         console.log(`Connection to DB to port ${process.env['POSTGRES_PORT']}`);
     } catch (err) {
         console.log('Connection error', err);
-        process.exit(1);
+        // process.exit(1);
     }
 };
 
-const expConnectToDB = async (cb: () => void) => {
-    try {
-        await connectionDB();
-        cb();
-    } catch (err) {
-        console.log("DB CONNECTION ERROR", err)
-    }
-};
-export { expConnectToDB };
+// const expConnectToDB = async (cb: () => void) => {
+//     try {
+//         await connectionDB();
+//         cb();
+//     } catch (err) {
+//         console.log("DB CONNECTION ERROR", err)
+//     }
+// };
+export { /* expConnectToDB */ connectionDB };
