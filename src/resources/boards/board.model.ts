@@ -3,17 +3,17 @@ import { v4 as uuid } from 'uuid';
 import { Column } from './board.column.model';
 
 class Board {
-  id: string;
+    id: string;
 
-  title: string;
+    title: string;
 
-  columns: Column[];
+    columns: Column[];
 
-  constructor({ id = uuid(), title = 'BOARD_TITLE', columns = [] } = {}) {
-    this.id = id;
-    this.title = title;
-    this.columns = columns.map((col) => new Column(col));
-  }
+    constructor({ id = uuid(), title = 'BOARD_TITLE', columns = [] } = {}) {
+        this.id = id;
+        this.title = title;
+        this.columns = columns.map((col) => new Column(col));
+    }
 }
 
 export { Board };

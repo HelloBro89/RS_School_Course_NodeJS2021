@@ -4,7 +4,6 @@ import { User } from '../../entities/user';
 
 
 const getAllUsers = async () => {
-  // падает вот тут !!!
   const usersRepository = getRepository(User);
   return usersRepository.find({ where: {} });
 };

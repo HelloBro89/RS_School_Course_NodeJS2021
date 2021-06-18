@@ -1,5 +1,5 @@
 import { Request, Router } from 'express';
-import { Task } from './task.model';
+// import { Task } from '../../entities/tasks';
 import { tasksService } from './task.service';
 
 const taskRouter = Router({ mergeParams: true });
@@ -22,7 +22,7 @@ taskRouter.route('/:taskId').get(async (req, res) => {
 
 taskRouter.route('/').post(async (req: Request, res) => {
   req.body.boardId = req.params['boardId'];
-  const addedTask = await tasksService.createdTask(new Task(req.body));
+  const addedTask = await tasksService.createdTask(req.body);
   res.status(201).json(addedTask);
 });
 

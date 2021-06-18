@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { Board } from './board.model';
+import { Board } from '../../entities/board';
 import { boardsService } from './board.service';
 import { taskRouter } from '../tasks/task.router';
 

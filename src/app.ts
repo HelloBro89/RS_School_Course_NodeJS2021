@@ -6,7 +6,7 @@ import YAML from 'yamljs';
 import { finished } from 'stream';
 import { routerUser } from './resources/users/user.router';
 import { routerBoard } from './resources/boards/board.router';
-import errorHandler from './middleware/error.handler';
+// import errorHandler from './middleware/error.handler';
 import { recordingLogs } from './logger/logger';
 import { uncaughtException, unhandledRejection } from './middleware/events';
 
@@ -47,7 +47,7 @@ app.use((req, res, next) => {
 
 app.use('/users', routerUser);
 app.use('/boards', routerBoard);
-app.use(errorHandler);
+// app.use(errorHandler);
 
 process.on('uncaughtException', uncaughtException);
 process.on('unhandledRejection', unhandledRejection);

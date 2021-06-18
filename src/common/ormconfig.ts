@@ -10,7 +10,6 @@ dotenv.config({
 // need to add variable
 export const config = {
     type: "postgres",
-    name: 'default',
     host: process.env['POSTGRES_HOST'],
     port: process.env['POSTGRES_PORT'],
     username: process.env['POSTGRES_USER'],

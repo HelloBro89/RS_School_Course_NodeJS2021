@@ -1,520 +1,96 @@
-UncaughtException error:  TSError: ⨯ Unable to compile TypeScript:
-[96msrc/helpers/pgdb.ts[0m:[93m8[0m:[93m15[0m - [91merror[0m[90m TS6133: [0m'shopkeeperRepository' is declared but its value is never read.
+UncaughtException error:  Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at Function.listen (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\application.js:618:24)
+    at D:\WorkJS\RS_School_Course_NodeJS2021\src\server.ts:9:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
 
-[7m8[0m         const shopkeeperRepository = getRepository(Shopkeeper);
-[7m [0m [91m              ~~~~~~~~~~~~~~~~~~~~[0m
-[96msrc/helpers/pgdb.ts[0m:[93m8[0m:[93m52[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Shopkeeper'.
-
-[7m8[0m         const shopkeeperRepository = getRepository(Shopkeeper);
-[7m [0m [91m                                                   ~~~~~~~~~~[0m
-
-    at createTSError (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:587:12)
-    at reportTSError (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:591:19)
-    at getOutput (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:921:36)
-    at Object.compile (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:1189:32)
-    at Module.m._compile (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:1295:42)
-    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
-    at Object.require.extensions.<computed> [as .ts] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:1298:12)
-    at Module.load (internal/modules/cjs/loader.js:928:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
-    at Module.require (internal/modules/cjs/loader.js:952:19) 
-
-UncaughtException error:  TSError: ⨯ Unable to compile TypeScript:
-[96msrc/helpers/pgdb.ts[0m:[93m8[0m:[93m15[0m - [91merror[0m[90m TS6133: [0m'shopkeeperRepository' is declared but its value is never read.
-
-[7m8[0m         const shopkeeperRepository = getRepository('MyName');
-[7m [0m [91m              ~~~~~~~~~~~~~~~~~~~~[0m
-
-    at createTSError (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:587:12)
-    at reportTSError (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:591:19)
-    at getOutput (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:921:36)
-    at Object.compile (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:1189:32)
-    at Module.m._compile (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:1295:42)
-    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
-    at Object.require.extensions.<computed> [as .ts] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:1298:12)
-    at Module.load (internal/modules/cjs/loader.js:928:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
-    at Module.require (internal/modules/cjs/loader.js:952:19) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:33)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:33)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:7:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:9:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:9:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:9:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:9:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:9:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:9:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:9:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getManager (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:260:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:9:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  TypeError: Cannot read property 'connect' of undefined
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:845:25
-    at new Promise (<anonymous>)
-    at PostgresDriver.obtainMasterConnection (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:844:16)
-    at PostgresQueryRunner.connect (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:98:58)
-    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:204:47)
-    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:117:75
-    at new Promise (<anonymous>)
-    at Object.__awaiter (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:113:16) 
-
-Unhandled rejection detected:  TypeError: Cannot read property 'connect' of undefined
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:845:25
-    at new Promise (<anonymous>)
-    at PostgresDriver.obtainMasterConnection (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:844:16)
-    at PostgresQueryRunner.connect (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:98:58)
-    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:204:47)
-    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:117:75
-    at new Promise (<anonymous>)
-    at Object.__awaiter (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:113:16) 
-
-Unhandled rejection detected:  TypeError: Cannot read property 'connect' of undefined
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:845:25
-    at new Promise (<anonymous>)
-    at PostgresDriver.obtainMasterConnection (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:844:16)
-    at PostgresQueryRunner.connect (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:98:58)
-    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:204:47)
-    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:117:75
-    at new Promise (<anonymous>)
-    at Object.__awaiter (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:113:16) 
-
-Unhandled rejection detected:  ConnectionNotFoundError: Connection "default" was not found.
-    at new ConnectionNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\ConnectionNotFoundError.ts:8:9)
-    at ConnectionManager.get (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\ConnectionManager.ts:40:19)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:35)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5) 
-
-Unhandled rejection detected:  TypeError: Cannot read property 'connect' of undefined
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:845:25
-    at new Promise (<anonymous>)
-    at PostgresDriver.obtainMasterConnection (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:844:16)
-    at PostgresQueryRunner.connect (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:98:58)
-    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:204:47)
-    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:117:75
-    at new Promise (<anonymous>)
-    at Object.__awaiter (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:113:16) 
-
-UncaughtException error:  TSError: ⨯ Unable to compile TypeScript:
-[96msrc/helpers/connectdb.ts[0m:[93m18[0m:[93m48[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.
-  Type 'Connection' has no call signatures.
-
-[7m18[0m             if (!connection.isConnected) await connection();
-[7m  [0m [91m                                               ~~~~~~~~~~[0m
-
-    at createTSError (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:587:12)
-    at reportTSError (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:591:19)
-    at getOutput (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:921:36)
-    at Object.compile (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:1189:32)
-    at Module.m._compile (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:1295:42)
-    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
-    at Object.require.extensions.<computed> [as .ts] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\ts-node\src\index.ts:1298:12)
-    at Module.load (internal/modules/cjs/loader.js:928:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
-    at Module.require (internal/modules/cjs/loader.js:952:19) 
-
-Unhandled rejection detected:  RepositoryNotFoundError: No repository for "User" was found. Looks like this entity is not registered in current "default" connection?
-    at new RepositoryNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\RepositoryNotFoundError.ts:11:9)
-    at EntityManager.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\entity-manager\EntityManager.ts:925:19)
-    at Connection.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\Connection.ts:346:29)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:55)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3) 
-
-Unhandled rejection detected:  TypeError: Cannot read property 'connect' of undefined
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:845:25
-    at new Promise (<anonymous>)
-    at PostgresDriver.obtainMasterConnection (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:844:16)
-    at PostgresQueryRunner.connect (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:98:58)
-    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:204:47)
-    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:117:75
-    at new Promise (<anonymous>)
-    at Object.__awaiter (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:113:16) 
-
-Unhandled rejection detected:  TypeError: Cannot read property 'connect' of undefined
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:845:25
-    at new Promise (<anonymous>)
-    at PostgresDriver.obtainMasterConnection (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:844:16)
-    at PostgresQueryRunner.connect (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:98:58)
-    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:204:47)
-    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:117:75
-    at new Promise (<anonymous>)
-    at Object.__awaiter (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:113:16) 
-
-Unhandled rejection detected:  RepositoryNotFoundError: No repository for "User" was found. Looks like this entity is not registered in current "default" connection?
-    at new RepositoryNotFoundError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\RepositoryNotFoundError.ts:11:9)
-    at EntityManager.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\entity-manager\EntityManager.ts:925:19)
-    at Connection.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\connection\Connection.ts:346:29)
-    at Object.getRepository (D:\WorkJS\RS_School_Course_NodeJS2021\src\index.ts:284:55)
-    at Object.getAllUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.memory.repository.ts:8:27)
-    at Object.allUsers (D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.service.ts:9:34)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\users\user.router.ts:8:36
-    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3) 
-
-Unhandled rejection detected:  TypeError: Cannot read property 'connect' of undefined
-    at D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:845:25
-    at new Promise (<anonymous>)
-    at PostgresDriver.obtainMasterConnection (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:844:16)
-    at PostgresQueryRunner.connect (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:98:58)
-    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:204:47)
-    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:117:75
-    at new Promise (<anonymous>)
-    at Object.__awaiter (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:113:16) 
-
-Unhandled rejection detected:  QueryFailedError: null value in column "id" of relation "users" violates not-null constraint
+Unhandled rejection detected:  QueryFailedError: value too long for type character varying(50)
     at new QueryFailedError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\QueryFailedError.ts:11:9)
     at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:228:19)
     at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
     at Object.throw (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
     at rejected (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
     at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+
+Unhandled rejection detected:  TypeError: columns.map is not a function
+    at new Board (D:\WorkJS\RS_School_Course_NodeJS2021\src\entities\board.ts:19:32)
+    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\boards\board.router.ts:26:55
+    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
+    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:174:3) 
+
+Unhandled rejection detected:  TypeError: columns.map is not a function
+    at new Board (D:\WorkJS\RS_School_Course_NodeJS2021\src\entities\board.ts:19:32)
+    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\boards\board.router.ts:26:55
+    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
+    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:174:3) 
+
+Unhandled rejection detected:  TypeError: columns.map is not a function
+    at new Board (D:\WorkJS\RS_School_Course_NodeJS2021\src\entities\board.ts:19:32)
+    at D:\WorkJS\RS_School_Course_NodeJS2021\src\resources\boards\board.router.ts:26:55
+    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\layer.js:95:5)
+    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\express\lib\router\index.js:174:3) 
+
+Unhandled rejection detected:  QueryFailedError: value too long for type character varying(50)
+    at new QueryFailedError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\QueryFailedError.ts:11:9)
+    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:228:19)
+    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
+    at Object.throw (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
+    at rejected (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+
+Unhandled rejection detected:  QueryFailedError: null value in column "columnId" of relation "tasks" violates not-null constraint
+    at new QueryFailedError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\QueryFailedError.ts:11:9)
+    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:228:19)
+    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
+    at Object.throw (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
+    at rejected (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+
+Unhandled rejection detected:  QueryFailedError: null value in column "columnId" of relation "tasks" violates not-null constraint
+    at new QueryFailedError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\QueryFailedError.ts:11:9)
+    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:228:19)
+    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
+    at Object.throw (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
+    at rejected (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+
+Unhandled rejection detected:  QueryFailedError: null value in column "columnId" of relation "tasks" violates not-null constraint
+    at new QueryFailedError (D:\WorkJS\RS_School_Course_NodeJS2021\src\error\QueryFailedError.ts:11:9)
+    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:228:19)
+    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
+    at Object.throw (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
+    at rejected (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+
+Unhandled rejection detected:  TypeError: Cannot read property 'connect' of undefined
+    at D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:845:25
+    at new Promise (<anonymous>)
+    at PostgresDriver.obtainMasterConnection (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresDriver.ts:844:16)
+    at PostgresQueryRunner.connect (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:98:58)
+    at PostgresQueryRunner.<anonymous> (D:\WorkJS\RS_School_Course_NodeJS2021\src\driver\postgres\PostgresQueryRunner.ts:204:47)
+    at step (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
+    at Object.next (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
+    at D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:117:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\WorkJS\RS_School_Course_NodeJS2021\node_modules\typeorm\node_modules\tslib\tslib.js:113:16) 
 
