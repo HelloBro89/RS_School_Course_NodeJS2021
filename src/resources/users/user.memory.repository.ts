@@ -1,6 +1,6 @@
-import { getRepository/* , getConnectionManager */ } from 'typeorm';
-// import { DBtasks } from '../db';
+import { getRepository } from 'typeorm';
 import { User } from '../../entities/user';
+import { Task } from '../../entities/tasks';
 
 
 const getAllUsers = async () => {
@@ -30,37 +30,24 @@ const updateUser = async (
   body: { id: string; name: string; login: string; password: string }
 ) => {
   const usersRepository = getRepository(User);
-  // const res = usersRepository.findOne(id);
   usersRepository.update(id, body);
   return body;
-  // const userIndex = User.findIndex((el) => el.id === id);
-
-  // if (userIndex !== -1) {
-  //   User[userIndex] = body;
-  // }
-
   // return User[userIndex];
 };
 
 const deleteUser = async (id: string) => {
+  const tasksRepository = getRepository(Task);
+  const arrayOfTasks = await tasksRepository.find({ where: { userId: id } });
+  if (arrayOfTasks.length > 0) {
+    for (let i = 0; i < arrayOfTasks.length; i += 1) {
+      const idTasks = arrayOfTasks[i]!.id;
+      const newObj = { ...arrayOfTasks[i], userId: null };
+      tasksRepository.update(idTasks, newObj)
+    }
+  }
   const usersRepository = getRepository(User);
   const res = await usersRepository.delete(id);
-  // if (res === undefined) return 'Not found';
   return res.raw;
-  // const userIndex = User.findIndex((el) => el.id === id);
-
-  // for (let i = 0; i < DBtasks.length; i += 1) {
-  //   const taskIndex = DBtasks.findIndex((el) => el.userId === id);
-  //   if (taskIndex !== -1) {
-  //     DBtasks[taskIndex] = { ...DBtasks[taskIndex], userId: null };
-  //   }
-  // }
-
-  // const deletedObj: { id?: string | undefined; name?: string | undefined; login?: string | undefined; password?: string | undefined; } = { ...User[userIndex] };
-
-  // User.splice(userIndex, 1);
-
-  // return deletedObj;
 };
 
 export const usersRepo = {

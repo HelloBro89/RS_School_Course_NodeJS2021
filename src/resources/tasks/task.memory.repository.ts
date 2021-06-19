@@ -1,8 +1,5 @@
-import { getRepository/* , getConnectionManager */ } from 'typeorm';
-// import { DBtasks } from '../db';
+import { getRepository } from 'typeorm';
 import { Task } from '../../entities/tasks';
-
-// import { DBtasks } from '../db';
 
 type TaskType = {
   id: string;
@@ -23,8 +20,6 @@ const getTaskByID = async (id: string) => {
 
   const tasksRepository = getRepository(Task);
   return tasksRepository.findOne(id);
-  // const neededTask = DBtasks.find((el) => el.id === id);
-  // return neededTask;
 };
 
 const createTask = async (task: TaskType) => {
@@ -32,32 +27,18 @@ const createTask = async (task: TaskType) => {
   const newTask = tasksRepository.create(task);
   const addedTask = tasksRepository.save(newTask);
   return addedTask;
-  // DBtasks.push(task);
-  // return task;
 };
 
 const updateTask = async (id: string, body: TaskType) => {
   const tasksRepository = getRepository(Task);
   tasksRepository.update(id, body);
   return body;
-
-
-  // const taskIndex = DBtasks.findIndex((el) => el.id === id);
-  // if (taskIndex !== -1) {
-  //   DBtasks[taskIndex] = body;
-  // }
-  // return DBtasks[taskIndex];
 };
 
 const deleteTask = async (id: string) => {
-  const usersRepository = getRepository(Task);
-  const res = await usersRepository.delete(id);
+  const tasksRepository = getRepository(Task);
+  const res = await tasksRepository.delete(id);
   return res.raw;
-
-  // const taskIndex = DBtasks.findIndex((el) => el.id === id);
-  // const task = DBtasks[taskIndex];
-  // DBtasks.splice(taskIndex, 1);
-  // return task;
 };
 
 export const taskdRepo = {
