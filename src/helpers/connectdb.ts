@@ -1,5 +1,5 @@
 import { getConnection, createConnection } from "typeorm";
-import { config } from "../../ormconfig";
+import { config } from "../common/ormconfigtwo";
 
 
 const connectionDB = async () => {
