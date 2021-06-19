@@ -8,16 +8,24 @@ dotenv.config({
 });
 
 // need to add variable
-export const config = {
+export = {
     type: "postgres",
     host: process.env['POSTGRES_HOST'],
     port: process.env['POSTGRES_PORT'],
     username: process.env['POSTGRES_USER'],
     password: process.env['POSTGRES_PASSWORD'],
     database: process.env['POSTGRES_DB'],
-    synchronize: true, // ToDo: replace on migrations
+    synchronize: false,
     autoReconnect: true,
     reconnectTries: Number.MAX_VALUE,
     reconnectionInterval: 1000,
-    entities: ['src/entities/**/*.ts'],
+    entities: ['./src/entities/**/*.ts'],
+    dropSchema: true,
+    migrationsRun: false,
+    migrations: [
+        "src/migration/**/*.ts"
+    ]/* ,
+    migrationsDir: 'src/migrations' */
+
 } as ConnectionOptions;
+
