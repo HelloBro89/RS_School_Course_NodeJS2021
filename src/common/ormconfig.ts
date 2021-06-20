@@ -10,11 +10,11 @@ import { config } from "./config";
 
 export = {
     type: "postgres",
-    host: config.POSTGRES_HOST,
-    port: Number(config.POSTGRES_PORT),
-    username: config.POSTGRES_USER,
-    password: config.POSTGRES_PASSWORD,
-    database: config.POSTGRES_DB,
+    host: config.POSTGRES_HOST || 'postgres',
+    port: Number(config.POSTGRES_PORT) || '5432',
+    username: config.POSTGRES_USER || 'postgres',
+    password: config.POSTGRES_PASSWORD || 'postgres',
+    database: config.POSTGRES_DB || 'postgres',
     synchronize: false,
     entities: ['./src/entities/**/*.ts'],
     dropSchema: true,
