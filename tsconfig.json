@@ -25,6 +25,6 @@
     ],
     "include": [
         "./src/**/*.ts",
-        "ormconfig.ts"
+        "src/ormconfig.ts"
     ]
 }

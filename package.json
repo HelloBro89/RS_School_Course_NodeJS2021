@@ -8,7 +8,9 @@
   "description": "REST service starter for RS School",
   "main": "src/server.ts",
   "scripts": {
-    "gener": "typeorm migration:create -n MyMigration",
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js --config src/common/ormconfig.ts",
+    "create": "typeorm migration:create -n newMigration",
+    "gener": "npm run typeorm -- migration:generate -n afterChange",
     "mig": "ts-node ./node_modules/typeorm/cli.js migration:run",
     "unmig": "ts-node ./node_modules/typeorm/cli.js migration:revert",
     "doc": "jsdoc -c jsdoc.json",

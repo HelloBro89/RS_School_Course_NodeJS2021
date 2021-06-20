@@ -1,6 +1,7 @@
 import { app } from './app';
-import { config } from './common/config';
+import { config } from './common/config'
 import { /* expConnectToDB */connectionDB } from './helpers/connectdb';
+
 
 const { PORT } = config;
 
@@ -12,11 +13,4 @@ const { PORT } = config;
   );
 })();
 
-// start();
-
-// connectionDB(() => {
-//   app.listen(PORT, () =>
-//     console.log(`App is running on http://localhost:${PORT}`)
-//   );
-// })
 
