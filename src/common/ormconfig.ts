@@ -1,12 +1,6 @@
 import { ConnectionOptions } from 'typeorm';
 import { config } from "./config";
-// import dotenv from 'dotenv';
-// import path from 'path';
 
-
-// dotenv.config({
-//     path: path.join(__dirname, '../../.env'),
-// });
 
 export = {
     type: "postgres",
@@ -15,9 +9,9 @@ export = {
     username: config.POSTGRES_USER || 'postgres',
     password: config.POSTGRES_PASSWORD || 'postgres',
     database: config.POSTGRES_DB || 'postgres',
-    synchronize: false,
+    synchronize: true,
     entities: ['./src/entities/**/*.ts'],
-    dropSchema: true,
+    dropSchema: false,
     migrationsRun: true,
     migrations: [
         "src/migration/**/*.ts"

@@ -3,16 +3,16 @@ import { v4 as uuid } from 'uuid';
 
 @Entity({ name: 'users' })
 class User {
-  @PrimaryColumn('varchar', { length: 50 })
+  @PrimaryColumn('varchar', { length: 250 })
   id!: string;
 
-  @Column('varchar', { length: 50 })
+  @Column('varchar', { length: 250 })
   name!: string;
 
-  @Column('varchar', { length: 50 })
+  @Column('varchar', { length: 250 })
   login!: string;
 
-  @Column('varchar', { length: 50 })
+  @Column('varchar', { length: 250 })
   password!: string;
 
   constructor({

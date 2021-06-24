@@ -1,6 +1,6 @@
 import { app } from './app';
 import { config } from './common/config'
-import { /* expConnectToDB */connectionDB } from './helpers/connectdb';
+import { connectionDB } from './helpers/connectdb';
 
 
 const { PORT } = config;

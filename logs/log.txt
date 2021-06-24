@@ -1,0 +1,1656 @@
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/2d5cbcb1-ffe5-4e5b-ba71-3161c20a0dc2; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/2d5cbcb1-ffe5-4e5b-ba71-3161c20a0dc2; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/c7bf1454-4460-43e0-a27b-d609df861b2b; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/c45100c7-f013-4b89-b3e1-bcca23a3f073; 
+ Query Parameters: {}; 
+ Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"c45100c7-f013-4b89-b3e1-bcca23a3f073"};
+StatusCode: 200; 
+
+URL: /users/c45100c7-f013-4b89-b3e1-bcca23a3f073; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/c45100c7-f013-4b89-b3e1-bcca23a3f073; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/6e3df77b-5882-406d-9dbe-4f746b00ba2e; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/922e3a46-9f71-4cd8-8da0-6db63f86c86c/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"41db8d89-7a74-4bce-88a7-15472a05b474","boardId":"922e3a46-9f71-4cd8-8da0-6db63f86c86c"};
+URL: /boards/922e3a46-9f71-4cd8-8da0-6db63f86c86c/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"41db8d89-7a74-4bce-88a7-15472a05b474","boardId":"922e3a46-9f71-4cd8-8da0-6db63f86c86c"};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /users/41db8d89-7a74-4bce-88a7-15472a05b474; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/922e3a46-9f71-4cd8-8da0-6db63f86c86c/tasks/a262f1c7-5971-49c3-a877-c393f70a6264; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/922e3a46-9f71-4cd8-8da0-6db63f86c86c/tasks/f3408803-a755-4905-b56d-3d86bcc436eb; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/922e3a46-9f71-4cd8-8da0-6db63f86c86c/tasks/a262f1c7-5971-49c3-a877-c393f70a6264; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/922e3a46-9f71-4cd8-8da0-6db63f86c86c/tasks/f3408803-a755-4905-b56d-3d86bcc436eb; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/922e3a46-9f71-4cd8-8da0-6db63f86c86c; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/efa5ab2a-dc1b-45c7-b02b-2bc38ecfef9e; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/8c220921-772f-405b-bc39-e82d2222d1fd; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/b8a7c27e-ca7b-401f-8a55-bd7ccead6672; 
+ Query Parameters: {}; 
+ Body: {"id":"b8a7c27e-ca7b-401f-8a55-bd7ccead6672","title":"Autotest updated board","columns":[{"id":"961e6410-186a-4133-bfaa-54e37a12a527","title":"Backlog","order":1},{"id":"a42e8742-1cfa-467e-af75-dabb55d6de56","title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+URL: /boards/b8a7c27e-ca7b-401f-8a55-bd7ccead6672; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/b8a7c27e-ca7b-401f-8a55-bd7ccead6672; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/c3116000-2221-4e98-8647-666853e214cd; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/c3116000-2221-4e98-8647-666853e214cd; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"8f4ceb60-f67e-4a4c-b8a9-69f182c80e03","userId":null,"columnId":null};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"8f4ceb60-f67e-4a4c-b8a9-69f182c80e03","userId":null,"columnId":null};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"8f4ceb60-f67e-4a4c-b8a9-69f182c80e03","userId":null,"columnId":null};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"8f4ceb60-f67e-4a4c-b8a9-69f182c80e03","userId":null,"columnId":null};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"8f4ceb60-f67e-4a4c-b8a9-69f182c80e03","userId":null,"columnId":null};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks/2fe4b281-fd77-4b49-90a0-57ae9caec089; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks/3fb2edad-d4d1-416e-b51f-08b4474247e2; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks/89111dc9-ca6e-4e50-b102-f1ba29b9e41e; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks/5392c069-cce9-4aa9-913f-b9b16fb805f5; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks/09b09019-ce96-4a39-bc43-4d1c1e2ff934; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks/2fe4b281-fd77-4b49-90a0-57ae9caec089; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks/3fb2edad-d4d1-416e-b51f-08b4474247e2; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks/89111dc9-ca6e-4e50-b102-f1ba29b9e41e; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks/5392c069-cce9-4aa9-913f-b9b16fb805f5; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/8f4ceb60-f67e-4a4c-b8a9-69f182c80e03/tasks/09b09019-ce96-4a39-bc43-4d1c1e2ff934; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+URL: /boards/efa5ab2a-dc1b-45c7-b02b-2bc38ecfef9e; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks/7ebdfe7f-d46d-4d8d-91f1-0f0f10b8d8d8; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks/13f01c57-da5b-4e13-ae2a-ebbbc3a843f9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks/1f9f0f9d-adfa-43cf-8f89-c3c86c10a467; 
+ Query Parameters: {}; 
+ Body: {"id":"1f9f0f9d-adfa-43cf-8f89-c3c86c10a467","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"3224e7b1-af86-4e31-966d-125333503806","columnId":null};
+StatusCode: 200; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks/1f9f0f9d-adfa-43cf-8f89-c3c86c10a467; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks/7ebdfe7f-d46d-4d8d-91f1-0f0f10b8d8d8; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks/7ebdfe7f-d46d-4d8d-91f1-0f0f10b8d8d8; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806/tasks/7ebdfe7f-d46d-4d8d-91f1-0f0f10b8d8d8; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards/3224e7b1-af86-4e31-966d-125333503806; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+StatusCode: 404; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+StatusCode: 404; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+StatusCode: 404; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+StatusCode: 201; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 201; 
+
+URL: /users/02645d17-c39f-429e-a1df-55f4157ce49e; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users/02645d17-c39f-429e-a1df-55f4157ce49e; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 200; 
+
+URL: /boards/e75d6768-e3de-4066-b84b-678e45f07fc9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks/01e1c62c-b797-4d61-8d37-901a4d4e93b9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 201; 
+
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+URL: /users/a4dbd88c-762a-41c9-a4e4-dfed2b6a4e3f; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 200; 
+
+StatusCode: 201; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+URL: /boards/a993b908-0b96-4a7e-bd4c-14eaf09bfd70; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 201; 
+
+StatusCode: 200; 
+
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks/83be5b21-48c5-4167-a3ae-0bb3d2a993a3; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+URL: /users/df25c9a7-e94d-493d-ad97-000e619a039d; 
+ Query Parameters: {}; 
+ Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"df25c9a7-e94d-493d-ad97-000e619a039d"};
+StatusCode: 200; 
+
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+URL: /users/df25c9a7-e94d-493d-ad97-000e619a039d; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 201; 
+
+StatusCode: 200; 
+
+URL: /boards/00bde823-4109-4374-8f28-116a594aa098; 
+ Query Parameters: {}; 
+ Body: {"id":"00bde823-4109-4374-8f28-116a594aa098","title":"Autotest updated board","columns":[{"id":"437ed0a3-97a2-4180-8223-f5095cbb8201","title":"Backlog","order":1},{"id":"acac10b0-4965-4cf5-b9a3-56ffa78fcf1a","title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+StatusCode: 201; 
+
+URL: /users/df25c9a7-e94d-493d-ad97-000e619a039d; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/00bde823-4109-4374-8f28-116a594aa098; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks/1b72391a-578f-4a89-b815-f24da560ae56; 
+ Query Parameters: {}; 
+ Body: {"id":"1b72391a-578f-4a89-b815-f24da560ae56","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"4bc51f18-33df-4ae2-a418-3b7d02001195","columnId":null};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks/1b72391a-578f-4a89-b815-f24da560ae56; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/00bde823-4109-4374-8f28-116a594aa098; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks/01e1c62c-b797-4d61-8d37-901a4d4e93b9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks/01e1c62c-b797-4d61-8d37-901a4d4e93b9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 201; 
+
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195/tasks/01e1c62c-b797-4d61-8d37-901a4d4e93b9; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users/1e5df340-0c8b-4dd4-849b-36a9ce17a5ae; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 201; 
+
+StatusCode: 404; 
+
+URL: /boards/674a70e4-ab09-4361-b9b7-44b5f6de4845; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/4bc51f18-33df-4ae2-a418-3b7d02001195; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+URL: /boards/674a70e4-ab09-4361-b9b7-44b5f6de4845; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"ca6fcef8-66b4-4025-b58e-42d45c21e84b","userId":null,"columnId":null};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"ca6fcef8-66b4-4025-b58e-42d45c21e84b","userId":null,"columnId":null};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"ca6fcef8-66b4-4025-b58e-42d45c21e84b","userId":null,"columnId":null};
+URL: /boards/affad220-4d36-49e0-9e62-e695bf36d6ee/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"dd382ff2-3500-480d-bb95-eb8718c81609","boardId":"affad220-4d36-49e0-9e62-e695bf36d6ee"};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"ca6fcef8-66b4-4025-b58e-42d45c21e84b","userId":null,"columnId":null};
+URL: /boards/affad220-4d36-49e0-9e62-e695bf36d6ee/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"dd382ff2-3500-480d-bb95-eb8718c81609","boardId":"affad220-4d36-49e0-9e62-e695bf36d6ee"};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"ca6fcef8-66b4-4025-b58e-42d45c21e84b","userId":null,"columnId":null};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /users/dd382ff2-3500-480d-bb95-eb8718c81609; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks/e5659df8-6389-4ded-8e02-7a00d8cd59fd; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks/ff26e51e-fa9b-4e40-9203-c0ce62cbd797; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks/b96f7100-d329-4e20-9e05-43361eccf9ad; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks/84ddb693-c42b-4a25-9414-836bc6fa061c; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks/1652afef-ca25-424c-b16f-7020384415d3; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/12345/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/affad220-4d36-49e0-9e62-e695bf36d6ee/tasks/ce96d975-b3a8-469f-980b-7bc551e9ca9b; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/affad220-4d36-49e0-9e62-e695bf36d6ee/tasks/5e75a1c7-afff-4414-9c0f-4bce453426d4; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/affad220-4d36-49e0-9e62-e695bf36d6ee/tasks/ce96d975-b3a8-469f-980b-7bc551e9ca9b; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks/84ddb693-c42b-4a25-9414-836bc6fa061c; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks/e5659df8-6389-4ded-8e02-7a00d8cd59fd; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks/ff26e51e-fa9b-4e40-9203-c0ce62cbd797; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks/b96f7100-d329-4e20-9e05-43361eccf9ad; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/affad220-4d36-49e0-9e62-e695bf36d6ee/tasks/5e75a1c7-afff-4414-9c0f-4bce453426d4; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/ca6fcef8-66b4-4025-b58e-42d45c21e84b/tasks/1652afef-ca25-424c-b16f-7020384415d3; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 200; 
+
+StatusCode: 404; 
+
+URL: /boards/affad220-4d36-49e0-9e62-e695bf36d6ee; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/e75d6768-e3de-4066-b84b-678e45f07fc9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards/12345/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 200; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+URL: /users/123; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/12345; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 200; 
+
+URL: /users/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/b857dcce-88bf-4596-b99a-92cd62e44f8b; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/b857dcce-88bf-4596-b99a-92cd62e44f8b; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/aaf09e57-2dcc-4185-a16a-ca823ee4e798; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/feae238b-d08f-4b93-ac0f-7703049a39f9; 
+ Query Parameters: {}; 
+ Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"feae238b-d08f-4b93-ac0f-7703049a39f9"};
+StatusCode: 200; 
+
+URL: /users/feae238b-d08f-4b93-ac0f-7703049a39f9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/feae238b-d08f-4b93-ac0f-7703049a39f9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/ce1591a9-b6b8-4790-9758-51be611f33ba; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/cd17f7c2-47c6-42e2-a200-a9b863126c72/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"b9527481-ea74-4cba-aef4-f1c486425070","boardId":"cd17f7c2-47c6-42e2-a200-a9b863126c72"};
+URL: /boards/cd17f7c2-47c6-42e2-a200-a9b863126c72/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"b9527481-ea74-4cba-aef4-f1c486425070","boardId":"cd17f7c2-47c6-42e2-a200-a9b863126c72"};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /users/b9527481-ea74-4cba-aef4-f1c486425070; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/cd17f7c2-47c6-42e2-a200-a9b863126c72/tasks/1805a1ae-02b6-46f1-8e66-64b9192517b1; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/cd17f7c2-47c6-42e2-a200-a9b863126c72/tasks/282c960d-3f2c-4bd5-b5d8-e8487e068a94; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/cd17f7c2-47c6-42e2-a200-a9b863126c72/tasks/1805a1ae-02b6-46f1-8e66-64b9192517b1; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/cd17f7c2-47c6-42e2-a200-a9b863126c72/tasks/282c960d-3f2c-4bd5-b5d8-e8487e068a94; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/cd17f7c2-47c6-42e2-a200-a9b863126c72; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/813b176c-87b8-45c4-b652-284ae78bac60; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/61572939-e381-4c85-a09c-41369ca63367; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/6d37f6c7-9f8b-42d1-9708-47815ebfe8e1; 
+ Query Parameters: {}; 
+ Body: {"id":"6d37f6c7-9f8b-42d1-9708-47815ebfe8e1","title":"Autotest updated board","columns":[{"id":"d42df8ba-b2d9-41ae-add8-63546c829123","title":"Backlog","order":1},{"id":"f7e971fd-ea4b-41d6-85a1-836ec17705e4","title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+URL: /boards/6d37f6c7-9f8b-42d1-9708-47815ebfe8e1; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/6d37f6c7-9f8b-42d1-9708-47815ebfe8e1; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/6c2ccb2f-a8e2-4d17-8299-29c28637f4db; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/6c2ccb2f-a8e2-4d17-8299-29c28637f4db; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"82903c34-f294-4ca9-826e-fce701d4e1fc","userId":null,"columnId":null};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"82903c34-f294-4ca9-826e-fce701d4e1fc","userId":null,"columnId":null};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"82903c34-f294-4ca9-826e-fce701d4e1fc","userId":null,"columnId":null};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"82903c34-f294-4ca9-826e-fce701d4e1fc","userId":null,"columnId":null};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"82903c34-f294-4ca9-826e-fce701d4e1fc","userId":null,"columnId":null};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks/b1ad33c6-5f38-4e15-a5f9-b31bcb220ed4; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks/f79eb711-688d-43db-82d8-7df61e0deb8e; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks/4e0b32bb-f6da-4f6b-ae38-f112478c46f7; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks/1ed573b0-2d9f-4fcb-a51a-78eafd32473a; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks/d634375e-fe06-4a42-94cc-56090a05ab58; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks/b1ad33c6-5f38-4e15-a5f9-b31bcb220ed4; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks/f79eb711-688d-43db-82d8-7df61e0deb8e; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks/4e0b32bb-f6da-4f6b-ae38-f112478c46f7; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks/1ed573b0-2d9f-4fcb-a51a-78eafd32473a; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/82903c34-f294-4ca9-826e-fce701d4e1fc/tasks/d634375e-fe06-4a42-94cc-56090a05ab58; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+URL: /boards/813b176c-87b8-45c4-b652-284ae78bac60; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks/84f50e2b-af0a-4875-b12a-8bd0163f75f7; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks/ec7a30ce-069f-4924-9807-f4f46f869ab3; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks/05331a08-8c0a-4780-a325-7660bd1fdbd7; 
+ Query Parameters: {}; 
+ Body: {"id":"05331a08-8c0a-4780-a325-7660bd1fdbd7","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"15ab983d-7b65-495d-b60a-9584deaad4e0","columnId":null};
+StatusCode: 200; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks/05331a08-8c0a-4780-a325-7660bd1fdbd7; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks/84f50e2b-af0a-4875-b12a-8bd0163f75f7; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks/84f50e2b-af0a-4875-b12a-8bd0163f75f7; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0/tasks/84f50e2b-af0a-4875-b12a-8bd0163f75f7; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards/15ab983d-7b65-495d-b60a-9584deaad4e0; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/e395ea1e-e759-4433-a61f-f5e3ac8a8fdd; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/e395ea1e-e759-4433-a61f-f5e3ac8a8fdd; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/1f55c811-f78c-46ff-ad70-0f129307c747; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/791d842f-76a4-487c-9c6e-2b846f8e9515; 
+ Query Parameters: {}; 
+ Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"791d842f-76a4-487c-9c6e-2b846f8e9515"};
+StatusCode: 200; 
+
+URL: /users/791d842f-76a4-487c-9c6e-2b846f8e9515; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/791d842f-76a4-487c-9c6e-2b846f8e9515; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /users/b415c8cd-4484-4129-a66a-f7a596b6513e; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/4e4196b3-fb02-4b11-b586-8f7088bf8d14/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"e6953479-186b-44ee-b403-0323aa662326","boardId":"4e4196b3-fb02-4b11-b586-8f7088bf8d14"};
+URL: /boards/4e4196b3-fb02-4b11-b586-8f7088bf8d14/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"e6953479-186b-44ee-b403-0323aa662326","boardId":"4e4196b3-fb02-4b11-b586-8f7088bf8d14"};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /users/e6953479-186b-44ee-b403-0323aa662326; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/4e4196b3-fb02-4b11-b586-8f7088bf8d14/tasks/d5940efd-0be5-4a37-aa87-788a6ff0f580; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/4e4196b3-fb02-4b11-b586-8f7088bf8d14/tasks/fa0831d1-e48c-43c6-a0bd-559ff306b0cb; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/4e4196b3-fb02-4b11-b586-8f7088bf8d14/tasks/d5940efd-0be5-4a37-aa87-788a6ff0f580; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/4e4196b3-fb02-4b11-b586-8f7088bf8d14/tasks/fa0831d1-e48c-43c6-a0bd-559ff306b0cb; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/4e4196b3-fb02-4b11-b586-8f7088bf8d14; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/dd0eca23-40b0-4ffb-8205-577b1a99c079; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/6c80ae57-1ed2-4710-b411-abc7b51f12e5; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/5c9df376-587d-4be2-8819-b90cf2e15dc9; 
+ Query Parameters: {}; 
+ Body: {"id":"5c9df376-587d-4be2-8819-b90cf2e15dc9","title":"Autotest updated board","columns":[{"id":"ab93f582-8691-4d07-aec4-a35ec4dd556a","title":"Backlog","order":1},{"id":"ef4004bf-2b62-4704-95dd-7e768c627060","title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+URL: /boards/5c9df376-587d-4be2-8819-b90cf2e15dc9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/5c9df376-587d-4be2-8819-b90cf2e15dc9; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/ccc7cae4-b9fe-4ea6-abe5-27f232979761; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/ccc7cae4-b9fe-4ea6-abe5-27f232979761; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"544d3a43-89e6-4439-87d5-c4c577af8a2a","userId":null,"columnId":null};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"544d3a43-89e6-4439-87d5-c4c577af8a2a","userId":null,"columnId":null};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"544d3a43-89e6-4439-87d5-c4c577af8a2a","userId":null,"columnId":null};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"544d3a43-89e6-4439-87d5-c4c577af8a2a","userId":null,"columnId":null};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"544d3a43-89e6-4439-87d5-c4c577af8a2a","userId":null,"columnId":null};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks/6007fea8-1479-455c-9a0b-865ba23eec5a; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks/4b25f6d7-f8a4-4189-9301-eba07fc454de; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks/d782e309-3cc6-4b17-ad14-372b75b5c5c5; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks/4601b560-31e8-4b6a-910b-73d54dab36b8; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks/663866c0-dbc0-4cc7-8208-c9e733e3f919; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks/6007fea8-1479-455c-9a0b-865ba23eec5a; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks/4b25f6d7-f8a4-4189-9301-eba07fc454de; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks/d782e309-3cc6-4b17-ad14-372b75b5c5c5; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks/4601b560-31e8-4b6a-910b-73d54dab36b8; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/544d3a43-89e6-4439-87d5-c4c577af8a2a/tasks/663866c0-dbc0-4cc7-8208-c9e733e3f919; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+URL: /boards/dd0eca23-40b0-4ffb-8205-577b1a99c079; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks/92e5b4d9-d83d-4906-80b8-01038a822250; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks/e66aee80-f60a-474a-9d23-22f96a158a9f; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks/e811d128-fc50-451c-a7d9-b6a521feac74; 
+ Query Parameters: {}; 
+ Body: {"id":"e811d128-fc50-451c-a7d9-b6a521feac74","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"a28e19cf-5f08-4758-acd3-5b7cb8305409","columnId":null};
+StatusCode: 200; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks/e811d128-fc50-451c-a7d9-b6a521feac74; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks/92e5b4d9-d83d-4906-80b8-01038a822250; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks/92e5b4d9-d83d-4906-80b8-01038a822250; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409/tasks/92e5b4d9-d83d-4906-80b8-01038a822250; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /boards/a28e19cf-5f08-4758-acd3-5b7cb8305409; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /favicon.ico; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 404; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 201; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 201; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 201; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 404; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 404; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 404; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 404; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"LOGIN","password":"PASSWORD"};
+StatusCode: 404; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"LOGIN","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 201; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"LOGIN","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"LOGIN","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"LOGIN","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"LOGIN","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 201; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 201; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"losgin","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 201; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"loin","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"2","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"logdin","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"logdin","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"PASSWORD"};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 201; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"loagin","password":"password"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"loagin","password":"password"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"loagin","password":"password"};
+StatusCode: 403; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"3","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"3","name":"WarGaming","login":"login","password":"psassword"};
+StatusCode: 403; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"3","name":"WarGaming","login":"login","password":"psassword"};
+StatusCode: 403; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"1","name":"WarGaming","login":"login","password":"password"};
+StatusCode: 200; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"id":"3","name":"WarGaming","login":"login","password":"psassword"};
+StatusCode: 403; 
+

@@ -1,4 +1,5 @@
 import { Request, Response, Router } from 'express';
+// import bcrypt from 'bcryptjs';
 import { User } from '../../entities/user';
 import { usersService } from './user.service';
 
@@ -19,7 +20,7 @@ routerUser.route('/:userId').get(async (req: Request, res: Response) => {
 });
 
 routerUser.route('/').post(async (req: Request, res: Response) => {
-
+  // req.body.password = bcrypt.hashSync(req.body.password, 10);
   const addedUser = await usersService.createdUser(req.body);
   res.status(201).json(User.toResponse(addedUser));
 });
