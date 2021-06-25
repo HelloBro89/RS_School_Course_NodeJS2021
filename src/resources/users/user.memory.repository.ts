@@ -1,4 +1,5 @@
 import { getRepository } from 'typeorm';
+// import bcrypt from 'bcryptjs';
 import { User } from '../../entities/user';
 import { Task } from '../../entities/tasks';
 
@@ -19,6 +20,9 @@ const createUser = async (user: {
   login: string;
   password: string;
 }) => {
+
+  // user.password = bcrypt.hashSync(user.password, 10);
+  // req.body.password = bcrypt.hashSync(req.body.password, 10);
   const usersRepository = getRepository(User);
   const newUser = usersRepository.create(user);
   const addedUser = usersRepository.save(newUser);

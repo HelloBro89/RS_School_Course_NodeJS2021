@@ -9,6 +9,7 @@ import { routerLogin } from './resources/login/login.router';
 import errorHandler from './middleware/error.handler';
 import { recordingLogs } from './logger/logger';
 import { uncaughtException, unhandledRejection } from './middleware/events';
+import { authorization } from './middleware/checkToken'
 
 const app = Express();
 
@@ -45,11 +46,11 @@ app.use((req, res, next) => {
   });
 });
 
-app.use('/users', routerUser);
+app.use('/users', authorization, routerUser);
+app.use('/boards', authorization, routerBoard);
 
 app.use('/login', routerLogin);
 
-app.use('/boards', routerBoard);
 
 
 
