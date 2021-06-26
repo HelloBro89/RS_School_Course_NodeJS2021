@@ -1,3 +1,14 @@
+# Task 8 authentication/jwt
+
+- git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git**
+- git checkout authentication/jwt**
+- npm i
+- проверь настройки файла .env (настройки своей базы данных)
+- npm start
+- npm run test:auth
+- npm run lint
+
+
 # Task 7 typeorm/posgres
 - склонируй репозиторий git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
 - перейди в нужную ветку git checkout postgresql/typeorm
