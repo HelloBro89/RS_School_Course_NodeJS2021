@@ -12,7 +12,7 @@ const { PORT } = config;
   app.listen(PORT, () => {
     // eslint-disable-next-line no-console
     console.log(`App is running on http://localhost:${PORT}`);
-    usersRepo.createAdmin({ id: '1', name: 'admin', login: 'admin', password: 'admin' });
+    usersRepo.createAdmin({ name: 'admin', login: 'admin', password: 'admin' });
   })
 })();
 

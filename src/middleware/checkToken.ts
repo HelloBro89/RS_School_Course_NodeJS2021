@@ -1,7 +1,7 @@
-import console from 'console';
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { config } from '../common/config';
+import { recordingErrors } from '../logger/logger';
 
 const authorization = (req: Request, res: Response, next: NextFunction) => {
     const sessionToken = req.headers.authorization;
@@ -14,14 +14,12 @@ const authorization = (req: Request, res: Response, next: NextFunction) => {
             res.status(401).send('Unauthorized user')
         } else {
             try {
-                console.log('****************************************************');
-                console.log(req.headers.authorization);
-                console.log('****************************************************');
-                const test = jwt.verify(token!, config.JWT_SECRET_KEY!);
-                console.log(test);
+
+                jwt.verify(token!, config.JWT_SECRET_KEY!);
+
                 next();
             } catch (err) {
-                console.log(err);
+                recordingErrors(err);
                 res.status(401).send('Unauthorized user!');
             }
         }

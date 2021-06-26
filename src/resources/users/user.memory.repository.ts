@@ -1,16 +1,18 @@
 import { getRepository } from 'typeorm';
-// import bcrypt from 'bcryptjs';
+import bcrypt from 'bcryptjs';
 import { User } from '../../entities/user';
 import { Task } from '../../entities/tasks';
 
 const createAdmin = async (admin: {
-  id: string;
-  name: string;
+  id?: string;
+  name?: string;
   login: string;
   password: string;
 }) => {
+  const adminNewPass = { ...admin, password: bcrypt.hashSync(admin.password, 10) };
+
   const adminRepository = getRepository(User);
-  const newAdmin = adminRepository.create(admin);
+  const newAdmin = adminRepository.create(adminNewPass);
   const addedAdmin = adminRepository.save(newAdmin);
   return addedAdmin;
 }
@@ -31,11 +33,10 @@ const createUser = async (user: {
   login: string;
   password: string;
 }) => {
+  const userNewPass = { ...user, password: bcrypt.hashSync(user.password, 10) };
 
-  // user.password = bcrypt.hashSync(user.password, 10);
-  // req.body.password = bcrypt.hashSync(req.body.password, 10);
   const usersRepository = getRepository(User);
-  const newUser = usersRepository.create(user);
+  const newUser = usersRepository.create(userNewPass);
   const addedUser = usersRepository.save(newUser);
   return addedUser;
 };
@@ -44,10 +45,10 @@ const updateUser = async (
   id: string,
   body: { id: string; name: string; login: string; password: string }
 ) => {
+  const userNewPass = { ...body, password: bcrypt.hashSync(body.password, 10) };
   const usersRepository = getRepository(User);
-  usersRepository.update(id, body);
-  return body;
-  // return User[userIndex];
+  usersRepository.update(id, userNewPass);
+  return userNewPass;
 };
 
 const deleteUser = async (id: string) => {
