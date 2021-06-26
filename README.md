@@ -1,6 +1,6 @@
 # Task 8 authentication/jwt
 
-- git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git**
+- git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
 - git checkout authentication/jwt**
 - npm i
 - проверь настройки файла .env (настройки своей базы данных)
