@@ -1,15 +1,16 @@
 import { getConnection, createConnection } from "typeorm";
-import config from '../common/ormconfig'
+import config from '../common/ormconfig';
+import { recordingLogs, recordingErrors } from '../logger/logger';
 
 const connectionDB = async () => {
     let connection;
     try {
-        console.log("********************************************");
+        recordingLogs("********************************************");
         connection = getConnection();
 
     } catch (err) {
         // add error handle
-        console.log("Сonnection has not been established yet... need to wait");
+        recordingLogs("Сonnection has not been established yet... need to wait");
     }
 
     try {
@@ -18,9 +19,9 @@ const connectionDB = async () => {
         } else {
             await createConnection(config);
         }
-        console.log(`Connection to DB to port ${process.env['POSTGRES_PORT']}`);
+        recordingLogs(`Connection to DB to port ${process.env['POSTGRES_PORT']}`);
     } catch (err) {
-        console.log('Connection error', err);
+        recordingErrors(err, 'Connection error...');
         // process.exit(1);
     }
 };
@@ -33,4 +34,4 @@ const connectionDB = async () => {
 //         console.log("DB CONNECTION ERROR", err)
 //     }
 // };
-export { /* expConnectToDB */ connectionDB };
+export { connectionDB };
