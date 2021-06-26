@@ -3,6 +3,17 @@ import { getRepository } from 'typeorm';
 import { User } from '../../entities/user';
 import { Task } from '../../entities/tasks';
 
+const createAdmin = async (admin: {
+  id: string;
+  name: string;
+  login: string;
+  password: string;
+}) => {
+  const adminRepository = getRepository(User);
+  const newAdmin = adminRepository.create(admin);
+  const addedAdmin = adminRepository.save(newAdmin);
+  return addedAdmin;
+}
 
 const getAllUsers = async () => {
   const usersRepository = getRepository(User);
@@ -60,4 +71,5 @@ export const usersRepo = {
   createUser,
   updateUser,
   deleteUser,
+  createAdmin
 };

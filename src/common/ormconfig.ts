@@ -11,7 +11,7 @@ export = {
     database: config.POSTGRES_DB || 'postgres',
     synchronize: true,
     entities: ['./src/entities/**/*.ts'],
-    dropSchema: false,
+    dropSchema: true,
     migrationsRun: true,
     migrations: [
         "src/migration/**/*.ts"

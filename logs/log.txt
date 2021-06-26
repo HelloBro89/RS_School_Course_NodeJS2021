@@ -2568,3 +2568,868 @@ URL: /users/12345;
  Body: {};
 StatusCode: 401; 
 
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+StatusCode: 403; 
+
+StatusCode: 403; 
+
+StatusCode: 403; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /users/undefined; 
+ Query Parameters: {}; 
+ Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /boards/undefined; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest updated board"};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /users/undefined; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks/undefined; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest updated task"};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks/undefined; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/undefined; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/undefined; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users/123; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /users/12345; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /users/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+StatusCode: 403; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+StatusCode: 403; 
+
+StatusCode: 403; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/undefined; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest updated board"};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards/undefined; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /users/undefined; 
+ Query Parameters: {}; 
+ Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /users/undefined; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks/undefined; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest updated task"};
+StatusCode: 401; 
+
+URL: /boards/undefined/tasks/undefined; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/undefined; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users/123; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /users/12345; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /users/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+URL: /login; 
+ Query Parameters: {}; 
+ Body: {"login":"admin","password":"admin"};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 201; 
+
+StatusCode: 200; 
+
+StatusCode: 201; 
+
+URL: /users/99c8942c-59a4-4199-a77e-ab2f162e7bf2; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/99c8942c-59a4-4199-a77e-ab2f162e7bf2; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/ac6e5875-281e-4d44-8d8d-36116d56cce5; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks/b795830b-43f3-4a5b-a69b-8d3553f89206; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+URL: /boards/b030211f-f845-4b2d-8c88-b6d5a90f9d38; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /users/3f22ceab-02da-4dcd-805c-0132b502a02b; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks/74296d2d-7380-4172-be65-ed9e4886038d; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+URL: /boards/376cb9e6-2ac7-4ac8-9e33-2ea3f7f5ecaf; 
+ Query Parameters: {}; 
+ Body: {"id":"376cb9e6-2ac7-4ac8-9e33-2ea3f7f5ecaf","title":"Autotest updated board","columns":[{"id":"ae4debc9-056a-4453-bb96-76675de37ec2","title":"Backlog","order":1},{"id":"79f81401-d1bc-468c-b9d3-e2010cf06946","title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+URL: /users/20f7b485-1cad-4fdf-9c22-4e1a4d0a98eb; 
+ Query Parameters: {}; 
+ Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"20f7b485-1cad-4fdf-9c22-4e1a4d0a98eb"};
+StatusCode: 200; 
+
+URL: /boards/376cb9e6-2ac7-4ac8-9e33-2ea3f7f5ecaf; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/20f7b485-1cad-4fdf-9c22-4e1a4d0a98eb; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 201; 
+
+URL: /boards/376cb9e6-2ac7-4ac8-9e33-2ea3f7f5ecaf; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks/39cbfe14-baf1-4111-872e-e88173daa2ad; 
+ Query Parameters: {}; 
+ Body: {"id":"39cbfe14-baf1-4111-872e-e88173daa2ad","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"07402f62-3d04-46c8-868e-bf3981667f89","columnId":null};
+StatusCode: 200; 
+
+URL: /users/20f7b485-1cad-4fdf-9c22-4e1a4d0a98eb; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks/39cbfe14-baf1-4111-872e-e88173daa2ad; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks/b795830b-43f3-4a5b-a69b-8d3553f89206; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 201; 
+
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks/b795830b-43f3-4a5b-a69b-8d3553f89206; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 201; 
+
+URL: /boards/cf204e97-f5ac-4472-8609-c05061c4b87d; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/4322dd1c-cf01-48ba-8c7a-b568dec79177; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89/tasks/b795830b-43f3-4a5b-a69b-8d3553f89206; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/cf204e97-f5ac-4472-8609-c05061c4b87d; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+URL: /boards/07402f62-3d04-46c8-868e-bf3981667f89; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 201; 
+
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"d4911f17-4a43-46a6-817b-82986515907b","userId":null,"columnId":null};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"d4911f17-4a43-46a6-817b-82986515907b","userId":null,"columnId":null};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"d4911f17-4a43-46a6-817b-82986515907b","userId":null,"columnId":null};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"d4911f17-4a43-46a6-817b-82986515907b","userId":null,"columnId":null};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"d4911f17-4a43-46a6-817b-82986515907b","userId":null,"columnId":null};
+URL: /boards/d51d6250-5d19-49c7-ba5d-391aed77daff/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"93f5c119-3a90-41f4-a1a2-5b6f03c4c73d","boardId":"d51d6250-5d19-49c7-ba5d-391aed77daff"};
+URL: /boards/d51d6250-5d19-49c7-ba5d-391aed77daff/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"93f5c119-3a90-41f4-a1a2-5b6f03c4c73d","boardId":"d51d6250-5d19-49c7-ba5d-391aed77daff"};
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 200; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+StatusCode: 201; 
+
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks/32f15443-5606-4006-abe4-20dd68979ba9; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks/80c1bf47-e788-4020-b078-439708b369a6; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks/afd533dc-7f27-466c-99d3-09bd17ecb2e2; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks/2b5a7b84-8434-411a-a5ca-2ebf7f00f414; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks/2e2614ac-ea92-445a-a5a4-bba5d78e6bae; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users/93f5c119-3a90-41f4-a1a2-5b6f03c4c73d; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/d51d6250-5d19-49c7-ba5d-391aed77daff/tasks/811ff56a-40f5-4e54-a857-4cdeef497106; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks/32f15443-5606-4006-abe4-20dd68979ba9; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks/80c1bf47-e788-4020-b078-439708b369a6; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks/afd533dc-7f27-466c-99d3-09bd17ecb2e2; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks/2b5a7b84-8434-411a-a5ca-2ebf7f00f414; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d4911f17-4a43-46a6-817b-82986515907b/tasks/2e2614ac-ea92-445a-a5a4-bba5d78e6bae; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d51d6250-5d19-49c7-ba5d-391aed77daff/tasks/517e6aa1-9d85-4a0a-9a84-abc88abdded0; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 404; 
+
+StatusCode: 200; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]};
+StatusCode: 401; 
+
+URL: /boards/ac6e5875-281e-4d44-8d8d-36116d56cce5; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d51d6250-5d19-49c7-ba5d-391aed77daff/tasks/811ff56a-40f5-4e54-a857-4cdeef497106; 
+ Query Parameters: {}; 
+ Body: {};
+URL: /boards/d51d6250-5d19-49c7-ba5d-391aed77daff/tasks/517e6aa1-9d85-4a0a-9a84-abc88abdded0; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /boards/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+StatusCode: 200; 
+
+StatusCode: 200; 
+
+URL: /boards/d51d6250-5d19-49c7-ba5d-391aed77daff; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 200; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users/123; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /users; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /users/12345; 
+ Query Parameters: {}; 
+ Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null};
+StatusCode: 401; 
+
+URL: /users/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
+URL: /boards/12345/tasks/12345; 
+ Query Parameters: {}; 
+ Body: {};
+StatusCode: 401; 
+
