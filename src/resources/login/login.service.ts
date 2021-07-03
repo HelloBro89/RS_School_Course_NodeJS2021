@@ -7,6 +7,7 @@ const signUser = async (login: string, userPassword: string) => {
     // const id = '1';
     const foundUser = getRepository(User);
     const admin = await foundUser.findOne({ login });
+    if (!admin) return null;
 
     const checkBycrypt = await bcrypt.compare(userPassword, admin!.password);
     if (checkBycrypt) {
