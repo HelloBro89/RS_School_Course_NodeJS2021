@@ -1,22 +1,14 @@
-import { ConnectionOptions } from 'typeorm';
-import { config } from "./config";
+/* eslint-disable prettier/prettier */
+import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 
-
-export = {
-    type: "postgres",
-    host: config.POSTGRES_HOST || 'postgres',
-    port: Number(config.POSTGRES_PORT) || '5432',
-    username: config.POSTGRES_USER || 'postgres',
-    password: config.POSTGRES_PASSWORD || 'postgres',
-    database: config.POSTGRES_DB || 'postgres',
+export const config: TypeOrmModuleOptions = {
+    type: 'postgres',
+    host: 'localhost',
+    port: 5433,
+    username: 'postgres',
+    password: 'korpik',
+    database: 'test',
     synchronize: true,
-    entities: ['./src/entities/**/*.ts'],
-    dropSchema: true,
-    migrationsRun: true,
-    migrations: [
-        "src/migration/**/*.ts"
-    ],
-    cli: {
-        "migrationsDir": "src/migration"
-    }
-} as ConnectionOptions;
+    dropSchema: false,
+    entities: ["dist/**/*.entity{.ts,.js}"],
+};
