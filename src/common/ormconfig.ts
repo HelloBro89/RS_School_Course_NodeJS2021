@@ -10,5 +10,5 @@ export const config: TypeOrmModuleOptions = {
     database: 'test',
     synchronize: true,
     dropSchema: false,
-    entities: ["dist/**/*.entity{.ts,.js}"],
+    entities: ["build/**/*.entity{.ts,.js}"],
 };

@@ -1,7 +1,6 @@
-/* eslint-disable prettier/prettier */
 export class UpdateUserDto {
-    id: string;
-    name: string;
-    login: string;
-    password: string;
+    id!: string;
+    name!: string;
+    login!: string;
+    password!: string;
 };

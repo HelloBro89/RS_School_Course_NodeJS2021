@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { Entity, PrimaryColumn, Column } from 'typeorm';
 import { v4 as uuid } from 'uuid';
 
