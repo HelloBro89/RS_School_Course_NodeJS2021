@@ -1,34 +1,49 @@
-// import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
-// import { TasksService } from './tasks.service';
-// import { CreateTaskDto } from './dto/create-task.dto';
-// import { UpdateTaskDto } from './dto/update-task.dto';
+import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { TasksService } from './tasks.service';
+import { CreateTaskDto } from './dto/create-task.dto';
+import { UpdateTaskDto } from './dto/update-task.dto';
 
-// @Controller('tasks')
-// export class TasksController {
-//   constructor(private readonly tasksService: TasksService) { }
+@Controller('/boards/:boardId/tasks')
+export class TasksController {
+    constructor(private readonly tasksService: TasksService) { }
 
-//   @Post()
-//   create(@Body() createTaskDto: CreateTaskDto) {
-//     return this.tasksService.create(createTaskDto);
-//   }
+    @Post()
+    async create(@Body() createTaskDto: CreateTaskDto) {
 
-//   @Get()
-//   findAll() {
-//     return this.tasksService.findAll();
-//   }
+        const task = await this.tasksService.create(createTaskDto);
+        return task;
 
-//   @Get(':id')
-//   findOne(@Param('id') id: string) {
-//     return this.tasksService.findOne(+id);
-//   }
+        // return this.tasksService.create(createTaskDto);
+    }
 
-//   @Patch(':id')
-//   update(@Param('id') id: string, @Body() updateTaskDto: UpdateTaskDto) {
-//     return this.tasksService.update(+id, updateTaskDto);
-//   }
+    @Get()
+    async findAll() {
+        const allTasks = await this.tasksService.findAll();
+        return allTasks;
+        // return this.tasksService.findAll();
+    }
 
-//   @Delete(':id')
-//   remove(@Param('id') id: string) {
-//     return this.tasksService.remove(+id);
-//   }
-// }
+    @Get(':id')
+    async findOne(@Param('id') id: string) {
+        const taskId = await this.tasksService.findOne(id);
+        return taskId;
+
+        // return this.tasksService.findOne(+id);
+    }
+
+    @Patch(':id')
+    async update(@Param('id') id: string, @Body() updateTaskDto: UpdateTaskDto) {
+        const updatedTask = await this.tasksService.update(id, updateTaskDto);
+        return updatedTask;
+
+
+        // return this.tasksService.update(+id, updateTaskDto);
+    }
+
+    @Delete(':id')
+    async remove(@Param('id') id: string) {
+        const deletedTask = await this.tasksService.remove(id);
+        return deletedTask;
+        // return this.tasksService.remove(+id);
+    }
+}

@@ -1,17 +1,17 @@
-// export class CreateTaskDto {
+export class CreateTaskDto {
 
-//     id!: string;
+    id!: string;
 
-//     title!: string;
+    title!: string;
 
-//     order!: number;
+    order!: number;
 
-//     description!: string;
+    description!: string;
 
-//     userId!: string | null;
+    userId!: string | null;
 
-//     boardId!: string | null;
+    boardId!: string | null;
 
-//     columnId!: string | null;
-//     ;
-// }
+    columnId!: string | null;
+
+}

@@ -1,27 +1,38 @@
-// /* eslint-disable class-methods-use-this */
-// import { Injectable } from '@nestjs/common';
-// // import { CreateTaskDto } from './dto/create-task.dto';
-// // import { UpdateTaskDto } from './dto/update-task.dto';
+import { Injectable } from '@nestjs/common';
+import { Repository } from 'typeorm';
+import { InjectRepository } from '@nestjs/typeorm';
+import { CreateTaskDto } from './dto/create-task.dto';
+import { UpdateTaskDto } from './dto/update-task.dto';
+import { Task } from './task.entity';
 
-// @Injectable()
-// export class TasksService {
-//   create(/* createTaskDto: CreateTaskDto */) {
-//     return 'This action adds a new task';
-//   }
+@Injectable()
+export class TasksService {
+    constructor(@InjectRepository(Task) private repository: Repository<Task>) { }
 
-//   findAll() {
-//     return `This action returns all tasks`;
-//   }
+    create(createTaskDto: CreateTaskDto) {
+        const task = this.repository.create(createTaskDto);
+        return this.repository.save(task);
+    }
 
-//   findOne(id: number) {
-//     return `This action returns a #${id} task`;
-//   }
+    findAll() {
+        const allTasks = this.repository.find({});
+        return allTasks;
+    }
 
-//   update(id: number/* , updateTaskDto: UpdateTaskDto */) {
-//     return `This action updates a #${id} task`;
-//   }
+    findOne(id: string) {
+        const taskId = this.repository.findOne(id);
+        return taskId;
+    }
 
-//   remove(id: number) {
-//     return `This action removes a #${id} task`;
-//   }
-// }
+    async update(id: string, updateTaskDto: UpdateTaskDto) {
+        await this.repository.update(id, updateTaskDto);
+        return updateTaskDto;
+
+    }
+
+    async remove(id: string) {
+        const deletedTask = this.repository.findOne(id);
+        await this.repository.delete(id);
+        return deletedTask;
+    }
+}
