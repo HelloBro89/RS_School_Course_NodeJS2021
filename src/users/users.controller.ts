@@ -18,22 +18,18 @@ export class UsersController {
   async getAll() {
     const allUsers = await this.usersService.getAll();
     return allUsers;
-    // return this.usersService.getAll();
   };
 
   @Get(':id')
   async getById(@Param('id') id: string) {
-
     const userByID = await this.usersService.getById(id);
     return userByID;
-    // return this.usersService.getById(id);
   };
 
   @Put(':id')
   async updateUser(@Body() updateUserDto: UpdateUserDto, @Param('id') id: string) {
     const changedUser = await this.usersService.updateUser(id, updateUserDto);
     return changedUser;
-    // return this.usersService.updateUser(id, updateUserDto);
   };
 
   @Delete(':id')
@@ -41,7 +37,6 @@ export class UsersController {
 
     const deletedUser = await this.usersService.deleteUser(id);
     return deletedUser;
-    // return this.usersService.deleteUser(id);
   };
 
 }

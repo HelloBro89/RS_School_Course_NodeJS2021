@@ -10,7 +10,6 @@ export class TasksService {
     constructor(@InjectRepository(Task) private taskRepository: Repository<Task>) { }
 
     createBoard(createTaskDto: CreateTaskDto) {
-
         const task = this.taskRepository.create(createTaskDto);
         return this.taskRepository.save(task);
     }

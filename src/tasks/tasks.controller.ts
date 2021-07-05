@@ -13,38 +13,29 @@ export class TasksController {
         const newCreateTaskDto = { ...createTaskDto, boardId };
         const task = await this.tasksService.createBoard(newCreateTaskDto);
         return task;
-
-        // return this.tasksService.create(createTaskDto);
     }
 
     @Get()
     async findAll() {
         const allTasks = await this.tasksService.findAll();
         return allTasks;
-        // return this.tasksService.findAll();
     }
 
     @Get(':id')
     async findOne(@Param('id') id: string) {
         const taskId = await this.tasksService.findOne(id);
         return taskId;
-
-        // return this.tasksService.findOne(+id);
     }
 
     @Put(':id')
     async update(@Param('id') id: string, @Body() updateTaskDto: UpdateTaskDto) {
         const updatedTask = await this.tasksService.update(id, updateTaskDto);
         return updatedTask;
-
-
-        // return this.tasksService.update(+id, updateTaskDto);
     }
 
     @Delete(':id')
     async remove(@Param('id') id: string) {
         const deletedTask = await this.tasksService.remove(id);
         return deletedTask;
-        // return this.tasksService.remove(+id);
     }
 }
