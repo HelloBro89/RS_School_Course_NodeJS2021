@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 import { Injectable } from '@nestjs/common';
 import { getRepository } from 'typeorm';
 import { User } from './user.entity';
@@ -6,31 +7,37 @@ import { UpdateUserDto } from './dto/update-user.dto';
 
 @Injectable()
 export class UsersService {
-    getAll() {
+
+    async getAll() {
         const usersRepository = getRepository(User);
-        return usersRepository.find({ where: {} });
+        const arrUsers = await usersRepository.find({ where: {} })
+
+        return arrUsers;
+
     };
 
-    getById(id: string) {
+    async getById(id: string) {
         const usersRepository = getRepository(User);
         return usersRepository.findOne(id);
     };
 
-    createUser(createUserDto: CreateUserDto) {
+    async createUser(createUserDto: CreateUserDto) {
         // const adminNewPass = { ...admin, password: bcrypt.hashSync(admin.password, 10) };
 
         const usersRepository = getRepository(User);
         const newAdmin = usersRepository.create(createUserDto);
-        const addedAdmin = usersRepository.save(newAdmin);
-        return addedAdmin;
+        const addedAdmin = await usersRepository.save(newAdmin);
+        return User.toResponse(addedAdmin);
+
     };
 
-    updateUser(id: string, updateUserDto: UpdateUserDto) {
+    async updateUser(id: string, updateUserDto: UpdateUserDto) {
         // const userNewPass = { ...body, password: bcrypt.hashSync(body.password, 10) };
 
         const usersRepository = getRepository(User);
         usersRepository.update(id, updateUserDto);
-        return updateUserDto;
+        return User.toResponse(updateUserDto);
+
     };
 
     async deleteUser(id: string) {

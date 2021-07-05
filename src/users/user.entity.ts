@@ -30,10 +30,10 @@ class User {
         this.password = password;
     }
 
-    //   static toResponse(user: { id?: string | undefined; name?: string | undefined; login?: string | undefined; password?: string | undefined; }) {
-    //     const { id, name, login } = user;
-    //     return { id, name, login };
-    //   }
+    static toResponse(user: { id?: string | undefined; name?: string | undefined; login?: string | undefined; password?: string | undefined; }) {
+        const { id, name, login } = user;
+        return { id, name, login };
+    }
 };
 
 export {
