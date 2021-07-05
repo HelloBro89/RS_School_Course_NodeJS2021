@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { CreateBoardDto } from './dto/create-board.dto';
@@ -8,11 +8,11 @@ import { Board } from './board.entity';
 @Injectable()
 export class BoardsService {
 
-  constructor(@InjectRepository(Board) private repository: Repository<Board>) { };
+  constructor(@InjectRepository(Board) private boardRepository: Repository<Board>) { };
 
   async createBoard(createBoardDto: CreateBoardDto) {
-    const board = this.repository.create(createBoardDto);
-    return this.repository.save(board);
+    const board = this.boardRepository.create(createBoardDto);
+    return this.boardRepository.save(board);
 
     // const boardsRepository = getRepository(Board);
     // const newBoard = boardsRepository.create(createBoardDto);
@@ -22,7 +22,7 @@ export class BoardsService {
 
   getAllBoards() {
 
-    const allBoards = this.repository.find({ where: {} });
+    const allBoards = this.boardRepository.find({ where: {} });
     return allBoards;
 
     // const boardsRepository = getRepository(Board);
@@ -32,7 +32,10 @@ export class BoardsService {
 
   async getBoardByID(id: string) {
 
-    const boardId = await this.repository.findOne(id);
+    const boardId = await this.boardRepository.findOne(id);
+    if (!boardId) {
+      throw new HttpException('Not found', HttpStatus.NOT_FOUND);
+    }
     return boardId;
 
     // const boardsRepository = getRepository(Board);
@@ -42,7 +45,7 @@ export class BoardsService {
 
   async updateBoard(id: string, updateBoardDto: UpdateBoardDto) {
 
-    await this.repository.update(id, updateBoardDto);
+    await this.boardRepository.update(id, updateBoardDto);
     return updateBoardDto;
 
     // const boardsRepository = getRepository(Board);
@@ -59,8 +62,8 @@ export class BoardsService {
     //     tasksRepository.delete(idTasks)
     //   }
     // }
-    const deletedBoard = this.repository.findOne(id);
-    await this.repository.delete(id);
+    const deletedBoard = this.boardRepository.findOne(id);
+    await this.boardRepository.delete(id);
     return deletedBoard;
 
 
