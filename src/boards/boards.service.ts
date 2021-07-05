@@ -1,38 +1,56 @@
-/* eslint-disable class-methods-use-this */
 import { Injectable } from '@nestjs/common';
-import { getRepository } from 'typeorm';
+import { Repository } from 'typeorm';
+import { InjectRepository } from '@nestjs/typeorm';
 import { CreateBoardDto } from './dto/create-board.dto';
 import { UpdateBoardDto } from './dto/update-board.dto';
 import { Board } from './board.entity';
 
 @Injectable()
 export class BoardsService {
+
+  constructor(@InjectRepository(Board) private repository: Repository<Board>) { };
+
   async createBoard(createBoardDto: CreateBoardDto) {
-    const boardsRepository = getRepository(Board);
-    const newBoard = boardsRepository.create(createBoardDto);
-    const addedBoard = await boardsRepository.save(newBoard);
-    return addedBoard;
+    const board = this.repository.create(createBoardDto);
+    return this.repository.save(board);
+
+    // const boardsRepository = getRepository(Board);
+    // const newBoard = boardsRepository.create(createBoardDto);
+    // const addedBoard = await boardsRepository.save(newBoard);
+    // return addedBoard;
   }
 
   getAllBoards() {
-    const boardsRepository = getRepository(Board);
-    return boardsRepository.find({ where: {} });
+
+    const allBoards = this.repository.find({ where: {} });
+    return allBoards;
+
+    // const boardsRepository = getRepository(Board);
+    // return boardsRepository.find({ where: {} });
   }
 
 
   async getBoardByID(id: string) {
-    const boardsRepository = getRepository(Board);
-    const foundUser = await boardsRepository.findOne(id);
-    return foundUser;
+
+    const boardId = await this.repository.findOne(id);
+    return boardId;
+
+    // const boardsRepository = getRepository(Board);
+    // const foundUser = await boardsRepository.findOne(id);
+    // return foundUser;
   }
 
-  updateBoard(id: string, updateBoardDto: UpdateBoardDto) {
-    const boardsRepository = getRepository(Board);
-    boardsRepository.update(id, updateBoardDto);
+  async updateBoard(id: string, updateBoardDto: UpdateBoardDto) {
+
+    await this.repository.update(id, updateBoardDto);
     return updateBoardDto;
+
+    // const boardsRepository = getRepository(Board);
+    // boardsRepository.update(id, updateBoardDto);
+    // return updateBoardDto;
   }
 
-  deleteBoard(id: string) {
+  async deleteBoard(id: string) {
     // const tasksRepository = getRepository(Task);
     // const arrayOfTasks = await tasksRepository.find({ where: { boardId: id } });
     // if (arrayOfTasks.length > 0) {
@@ -41,10 +59,14 @@ export class BoardsService {
     //     tasksRepository.delete(idTasks)
     //   }
     // }
+    const deletedBoard = this.repository.findOne(id);
+    await this.repository.delete(id);
+    return deletedBoard;
 
-    const boardsRepository = getRepository(Board);
-    const res = boardsRepository.findOne(id);
-    boardsRepository.delete(id);
-    return res;
+
+    // const boardsRepository = getRepository(Board);
+    // const res = boardsRepository.findOne(id);
+    // boardsRepository.delete(id);
+    // return res;
   }
 }

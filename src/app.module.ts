@@ -5,9 +5,10 @@ import { AppService } from './app.service';
 import { config } from './common/ormconfig';
 import { UsersModule } from './users/users.module';
 import { BoardsModule } from './boards/boards.module';
+// import { TasksModule } from './tasks/tasks.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(config), UsersModule, BoardsModule],
+  imports: [TypeOrmModule.forRoot(config), UsersModule, BoardsModule/* , TasksModule */],
   controllers: [AppController],
   providers: [AppService],
 })
