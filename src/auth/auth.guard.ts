@@ -9,31 +9,26 @@ export class AuthGuard implements CanActivate {
     constructor(private jwtService: JwtService) { };
 
     async canActivate(context: ExecutionContext): Promise<boolean> {
-        const sessionToken = context.switchToHttp().getRequest();
-        // const forSplit = sessionToken.headers.authorization;
-        console.log('*********************************');
-        console.log(sessionToken);
-        // console.log(forSplit);
-        console.log('*********************************');
-        if (sessionToken === undefined) {
-            throw new HttpException('Unauthorized', HttpStatus.UNAUTHORIZED);
-        } else {
+        const req = context.switchToHttp().getRequest();
+        try {
+            const sessionToken = req.headers.authorization;
 
-            const [type, token] = sessionToken.split(' ');
-            // console.log("token");
-            if (type !== 'Bearer') {
+            const type = sessionToken.split(' ')[0];
+            const token = sessionToken.split(' ')[1];
+            if (type !== 'Bearer' || !token) {
                 throw new HttpException('Unauthorized', HttpStatus.UNAUTHORIZED);
-            } else {
-                try {
-                    this.jwtService.verify(token);
-                    return true;
-
-                } catch (err) {
-                    console.log(err);
-                    throw new HttpException('Unauthorized', HttpStatus.UNAUTHORIZED);
-                }
             }
+
+            /* const receivedUser =  */this.jwtService.verify(token);
+            // console.log(receivedUser);
+            return true;
+
+        } catch (err) {
+            console.log(err);
+            throw new HttpException('Unauthorized', HttpStatus.UNAUTHORIZED);
         }
     }
+
 }
+
 
