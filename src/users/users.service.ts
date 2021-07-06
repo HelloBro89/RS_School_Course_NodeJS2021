@@ -1,10 +1,12 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
+import * as bcrypt from 'bcrypt';
 import { User } from './user.entity';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { Task } from '../tasks/task.entity';
+
 
 @Injectable()
 export class UsersService {
@@ -13,9 +15,22 @@ export class UsersService {
         @InjectRepository(Task) private taskRepository: Repository<Task>) { };
 
     async createUser(createUserDto: CreateUserDto) {
-        const user = await this.userRepository.create(createUserDto);
+        const userNewPass = { ...createUserDto, password: bcrypt.hashSync(createUserDto.password, 10) };
+        const user = this.userRepository.create(userNewPass);
         return this.userRepository.save(user);
     };
+
+    async findUser(login: string) {
+        const userLogin = await this.userRepository.findOne({ login });
+        // console.log('**********************************');
+        // console.log(userLogin);
+        // console.log('**********************************');
+
+        if (!userLogin) {
+            throw new HttpException('UNAUTHORIZED', HttpStatus.UNAUTHORIZED);
+        }
+        return userLogin;
+    }
 
     async getAll() {
         const users = await this.userRepository.find({ where: {} });

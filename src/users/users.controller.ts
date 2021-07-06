@@ -1,21 +1,27 @@
-import { Controller, Get, Post, Delete, Param, Body, Put } from '@nestjs/common';
+import { Controller, Get, Post, Delete, Param, Body, Put, UseGuards } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { User } from './user.entity';
+import { AuthGuard } from '../auth/auth.guard';
+
 
 @Controller('users')
+@UseGuards(AuthGuard)
 export class UsersController {
   constructor(private readonly usersService: UsersService) { }
 
+
   @Post()
   async createUser(@Body() createUserDto: CreateUserDto) {
+
     const createdUser = await this.usersService.createUser(createUserDto);
     return User.toResponse(createdUser);
   };
 
   @Get()
   async getAll() {
+
     const allUsers = await this.usersService.getAll();
     return allUsers;
   };

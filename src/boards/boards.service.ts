@@ -17,8 +17,8 @@ export class BoardsService {
     return this.boardRepository.save(board);
   }
 
-  getAllBoards() {
-    const allBoards = this.boardRepository.find({ where: {} });
+  async getAllBoards() {
+    const allBoards = await this.boardRepository.find({ where: {} });
     return allBoards;
   }
 

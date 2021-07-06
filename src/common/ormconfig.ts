@@ -8,6 +8,6 @@ export const config: TypeOrmModuleOptions = {
     password: 'korpik',
     database: 'test',
     synchronize: true,
-    dropSchema: false,
+    dropSchema: true,
     entities: ["build/**/*.entity{.ts,.js}"],
 };
