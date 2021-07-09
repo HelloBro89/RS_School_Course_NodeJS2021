@@ -4,6 +4,7 @@ import { UsersService } from './users.service';
 import { UsersController } from './users.controller';
 import { User } from './user.entity';
 import { Task } from '../tasks/task.entity';
+// eslint-disable-next-line import/no-cycle
 import { AuthModule } from '../auth/auth.module';
 
 @Module({

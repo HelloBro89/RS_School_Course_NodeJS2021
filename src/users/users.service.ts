@@ -1,7 +1,7 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-// import * as bcrypt from 'bcrypt';
+import * as bcrypt from 'bcrypt';
 import { User } from './user.entity';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
@@ -15,16 +15,13 @@ export class UsersService {
         @InjectRepository(Task) private taskRepository: Repository<Task>) { };
 
     async createUser(createUserDto: CreateUserDto) {
-        // const userNewPass = { ...createUserDto, password: bcrypt.hashSync(createUserDto.password, 10) };
-        const user = this.userRepository.create(createUserDto);
+        const userNewPass = { ...createUserDto, password: bcrypt.hashSync(createUserDto.password, 10) };
+        const user = this.userRepository.create(userNewPass);
         return this.userRepository.save(user);
     };
 
     async findUser(login: string) {
         const userLogin = await this.userRepository.findOne({ login });
-        // console.log('**********************************');
-        // console.log(userLogin);
-        // console.log('**********************************');
 
         if (!userLogin) {
             throw new HttpException('UNAUTHORIZED', HttpStatus.UNAUTHORIZED);
@@ -43,8 +40,8 @@ export class UsersService {
     };
 
     async updateUser(id: string, updateUserDto: UpdateUserDto) {
-        // const userNewPass = { ...body, password: bcrypt.hashSync(body.password, 10) };
-        const changedUser = await this.userRepository.update(id, updateUserDto);
+        const userNewPass = { ...updateUserDto, password: bcrypt.hashSync(updateUserDto.password, 10) };
+        const changedUser = await this.userRepository.update(id, userNewPass);
         return changedUser;
     };
 

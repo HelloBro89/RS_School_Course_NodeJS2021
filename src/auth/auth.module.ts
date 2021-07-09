@@ -2,6 +2,7 @@ import { Module, forwardRef } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
+// eslint-disable-next-line import/no-cycle
 import { UsersModule } from '../users/users.module';
 import { configOlder } from '../common/config';
 

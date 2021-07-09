@@ -12,6 +12,7 @@ export class AuthGuard implements CanActivate {
         try {
             const sessionToken = request.headers.authorization;
             if (!sessionToken) {
+
                 throw new HttpException('Unauthorized', HttpStatus.UNAUTHORIZED);
             }
             const [type, token] = sessionToken.split(' ');
