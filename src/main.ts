@@ -10,18 +10,18 @@ import { configOlder } from './common/config';
 
 async function bootstrap() {
   let app: INestApplication;
-
   if (configOlder.USE_FASTIFY) {
     app = await NestFactory.create<NestFastifyApplication>(
       AppModule,
       new FastifyAdapter(),
     )
+
   } else {
-    app = await NestFactory.create(AppModule)
+
+    app = await NestFactory.create(AppModule);
   };
 
   await app.listen(4000);
-
   const createAdmin = (admin: {
     id?: string;
     name?: string;
