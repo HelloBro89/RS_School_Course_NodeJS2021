@@ -1,11 +1,25 @@
 import { NestFactory } from '@nestjs/core';
 import * as bcrypt from 'bcrypt';
 import { getRepository } from 'typeorm';
+import { INestApplication } from '@nestjs/common';
+import { NestFastifyApplication, FastifyAdapter } from '@nestjs/platform-fastify';
 import { AppModule } from './app.module';
 import { User } from './users/user.entity';
+import { configOlder } from './common/config';
+
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  let app: INestApplication;
+
+  if (configOlder.USE_FASTIFY) {
+    app = await NestFactory.create<NestFastifyApplication>(
+      AppModule,
+      new FastifyAdapter(),
+    )
+  } else {
+    app = await NestFactory.create(AppModule)
+  };
+
   await app.listen(4000);
 
   const createAdmin = (admin: {
