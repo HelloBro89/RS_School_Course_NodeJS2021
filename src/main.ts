@@ -13,7 +13,7 @@ async function bootstrap() {
   if (configOlder.USE_FASTIFY) {
     app = await NestFactory.create<NestFastifyApplication>(
       AppModule,
-      new FastifyAdapter(),
+      new FastifyAdapter()
     )
 
   } else {

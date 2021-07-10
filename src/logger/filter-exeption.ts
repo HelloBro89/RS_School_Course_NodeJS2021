@@ -1,6 +1,9 @@
-/* eslint-disable class-methods-use-this */
-import { ExceptionFilter, Catch, ArgumentsHost, HttpException } from '@nestjs/common';
+import {
+    ExceptionFilter, Catch, ArgumentsHost, HttpException,/* , Logger */
+    Logger
+} from '@nestjs/common';
 import { Request, Response } from 'express';
+import { recordingErrors } from './rec-logs';
 
 @Catch(HttpException)
 export class HttpExceptionFilter implements ExceptionFilter {
@@ -10,12 +13,24 @@ export class HttpExceptionFilter implements ExceptionFilter {
         const request = ctx.getRequest<Request>();
         const status = exception.getStatus();
 
+        const errors = {
+            statusCode: status,
+            timestamp: new Date().toISOString(),
+            path: request.url,
+            body: request.body,
+            query: request.query,
+            method: request.method
+        }
+
+        if (status === 5555) { console.log(this) };
+
+        recordingErrors(exception.stack)
+        Logger.error(`${JSON.stringify(errors)}`);
+
+        // Logger.error(`URL: ${JSON.stringify(errors.path)} Body: ${JSON.stringify(errors.body)} ${JSON.stringify(errors.query)}`, 'ExceptionFilter');
+
         response
             .status(status)
-            .json({
-                statusCode: status,
-                timestamp: new Date().toISOString(),
-                path: request.url,
-            });
+            .json(errors);
     }
 }
