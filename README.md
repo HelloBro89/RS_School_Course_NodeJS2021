@@ -1,3 +1,17 @@
+# Task 9 NestJS
+- склонируй репозиторий git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
+- перейди в нужную ветку git checkout nestJS
+- выполни установку зависимостей npm i
+
+** Проверь настройки своего сервера в .env файле
+
+ПРОВЕРКА ЗАДАНИЯ
+1. В файле src\common\ormconfig.ts установи synchronize: true
+2. Выполни команду npm run start:dev
+3. Выполни npm run test:auth
+4. Выполни npm run lint
+5. Посмотри по пунктам кросс-чека в коде
+
 # Task 8 authentication/jwt
 
 - git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git

@@ -41,8 +41,9 @@ export class UsersService {
 
     async updateUser(id: string, updateUserDto: UpdateUserDto) {
         const userNewPass = { ...updateUserDto, password: bcrypt.hashSync(updateUserDto.password, 10) };
-        const changedUser = await this.userRepository.update(id, userNewPass);
-        return changedUser;
+        await this.userRepository.update(id, userNewPass);
+
+        return userNewPass;
     };
 
     async deleteUser(id: string) {
