@@ -6,11 +6,13 @@ This repository has a few branches. The branches are numbered. With each subsequ
 new tools, technologies and tasks are applied that correspond to their name.
 Existing branches:
 
+```
 1. №1/logging/errorHandling
 2. №2/docker/basics
 3. №3/postgresql/typeorm
 4. №4/authentication/jwt
 5. №5/nestJS
+```
 
 Existing tags:
 
@@ -20,9 +22,11 @@ Existing tags:
 
 ### Install postreSQL. All database and server settings are in the file .env
 
+```
 1. git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
 2. npm i
 3. npm run start:dev
+```
 
 ## Downloading
 
