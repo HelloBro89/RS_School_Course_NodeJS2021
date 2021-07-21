@@ -1,42 +1,22 @@
-# Task 7 typeorm/posgres
-- склонируй репозиторий git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
-- перейди в нужную ветку git checkout postgresql/typeorm
-- выполни установку зависимостей npm i
+# Task PostgreSQL & Typeorm
 
-** Проверь настройки своего сервера в .env файле
+- Use PostgreSQL database to store REST service data (Users, Boards, Tasks).
 
-ПРОВЕРКА ПЕРВОЙ ЧАСТИ ЗАДАНИЯ
-1. В файле src\common\ormconfig.ts установи synchronize: true
-2. Выполни команду npm start
-3. Выполни npm run test
-4. Выполни npm run lint
+- Use Typeorm to store and update data.
 
-ПРОВЕРКА ВТОРОЙ ЧАСТИ ЗАДАНИЯ
-1. В файле src\common\ormconfig.ts установи synchronize: false
-2. Измени любую сущность в любом из файлов в директории src\entities
-3. Выполни команду npm run gener(в директории src\migration появится файл с миграцией) выполнится скрипт migration:generate
-4. Выполни команду npm run mig (команда - migration:run)
-5. Выполни команду npm run unmig (команда - migration:revert)
+- The information on DB connection should be stored in .env file and should be passed to the application using the environment variables with the help of the following dotenv package.
 
-ЕСЛИ ЕСТЬ ЖЕЛАНИЕ, МОЖЕШЬ ВСЕ ТОЖЕ САМОЕ ПРОДЕЛАТЬ В КОНТЕЙНЕРАХ :-) НО ЭТОГО НЕТ В КРИТЕРИЯХ КРОСС ЧЕКА
-- docker-compose up
+## To run the current application, do the following:
 
-# Tasks 6 docker-basic
+### Install postreSQL. All database and server settings are in the file .env
 
-1. docker-compose up --build
-
-## Инструкция по запуску:
-- склонируй репозиторий git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
-- перейди в нужную ветку git checkout docker-basics
-- выполни установку зависимостей npm i
-- создай images и запусти на их основе контейнеры docker-compose up --build
-
-# RS School REST service
-
-## Prerequisites
-
-- Git - [Download & Install Git](https://git-scm.com/downloads).
-- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
+1. npm i
+2. in the file src\common\ormconfig.ts install synchronize: true
+3. change any entity in any of the files in the directory src\entities
+4. npm start
+5. npm run gener (in the directory src\migration a file with migration will appear) the script will be executed migration:generate
+6. npm run mig (script - migration:run)
+7. npm run unmig (script - migration:revert)
 
 ## Downloading
 
@@ -58,7 +38,6 @@ npm start
 
 After starting the app on port (4000 as default) you can open
 in your browser OpenAPI documentation by typing http://localhost:4000/doc/.
-For more information about OpenAPI/Swagger please visit https://swagger.io/.
 
 ## Testing
 
@@ -88,18 +67,8 @@ To run only specific test suite with authorization (users, boards or tasks)
 npm run test:auth <suite name>
 ```
 
-## Development
-
-If you're using VSCode, you can get a better developer experience from integration with [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions.
-
 ### Auto-fix and format
 
 ```
 npm run lint
 ```
-
-### Debugging in VSCode
-
-Press <kbd>F5</kbd> to debug.
-
-For more information, visit: https://code.visualstudio.com/docs/editor/debugging
