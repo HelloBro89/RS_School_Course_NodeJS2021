@@ -1,9 +1,19 @@
-# RS School REST service
+# Task Logging & Error Handling
 
-## Prerequisites
+Add logging functionality to already existing REST service.
 
-- Git - [Download & Install Git](https://git-scm.com/downloads).
-- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
+- Add express middleware which will log incoming requests to service (at least url, query parameters, body) and response status code.
+- Add express middleware which will log all unhandled errors and return a standard message with HTTP code 500 (Internal Server Error).
+- Add listener and logging to uncaughtException.
+- Add listener and logging to unhandledRejection.
+- Writing to process.stdou or to a file both can be used for logging. Any third-party logging library can also be used for this purpose.
+
+## To run the current application, do the following:
+
+### Install postreSQL. All database and server settings are in the file .env
+
+1. npm i
+2. npm run start
 
 ## Downloading
 
@@ -25,7 +35,6 @@ npm start
 
 After starting the app on port (4000 as default) you can open
 in your browser OpenAPI documentation by typing http://localhost:4000/doc/.
-For more information about OpenAPI/Swagger please visit https://swagger.io/.
 
 ## Testing
 
@@ -55,18 +64,8 @@ To run only specific test suite with authorization (users, boards or tasks)
 npm run test:auth <suite name>
 ```
 
-## Development
-
-If you're using VSCode, you can get a better developer experience from integration with [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions.
-
 ### Auto-fix and format
 
 ```
 npm run lint
 ```
-
-### Debugging in VSCode
-
-Press <kbd>F5</kbd> to debug.
-
-For more information, visit: https://code.visualstudio.com/docs/editor/debugging
