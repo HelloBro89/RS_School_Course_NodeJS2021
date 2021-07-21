@@ -1,5 +1,7 @@
 # Instruction for my repo
 
+### All tasks can be viewed here https://github.com/rolling-scopes-school/basic-nodejs-2021Q2#tasks
+
 ### The project was written in from the very beginning, including REST service and gradually transformed
 
 This repository has a few branches. The branches are numbered. With each subsequent branch,
