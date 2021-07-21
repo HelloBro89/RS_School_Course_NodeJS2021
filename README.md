@@ -1,12 +1,23 @@
-# Task 8 authentication/jwt
+# Task Authentification & JWT
 
-- git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
-- git checkout authentication/jwt
-- npm i
-- проверь настройки файла .env (настройки своей базы данных)
-- npm start
-- npm run test:auth
-- npm run lint
+- POST /users should accept password field and before save replace it with hash (use bcrypt package).
+- Add a POST /login method which accepts JSON with login and password and should return JWT token in response body: { token: <jwt_token> } (use jsonwebtoken package).
+- JWT token should contain userId and login in a payload.
+- Secret that used for signing the token should be stored in .env file.
+- For all client requests the JWT token should be added in HTTP Authorization header to all requests that requires authentication. HTTP authentication must follow Bearer scheme, e.g.:
+- Authorization: Bearer <jwt_token>
+- Add a middleware which will proxy all the requests (except /login) and check that HTTP Authorization header has the correct value of JWT token.
+- In case of the HTTP Authorization header in the request is absent or invalid or doesn’t follow Bearer scheme, the middleware should stop further router method execution and return HTTP 401 code (Unauthorized error) and the corresponding error message.
+- Add admin user to DB on service start with login = admin and password = admin
+
+## To run the current application, do the following:
+
+### Install postreSQL. All database and server settings are in the file .env
+
+```
+1. npm i
+2. npm start
+```
 
 ## Downloading
 
