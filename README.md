@@ -14,9 +14,10 @@
 2. in the file src\common\ormconfig.ts install synchronize: true
 3. change any entity in any of the files in the directory src\entities
 4. npm start
-5. npm run gener (in the directory src\migration a file with migration will appear) the script will be executed migration:generate
-6. npm run mig (script - migration:run)
-7. npm run unmig (script - migration:revert)
+5. in the file src\common\ormconfig.ts install synchronize: false
+6. npm run gener (in the directory src\migration a file with migration will appear) the script will be executed migration:generate
+7. npm run mig (script - migration:run)
+8. npm run unmig (script - migration:revert)
 
 ## Downloading
 
