@@ -1,19 +1,25 @@
-# Tasks 6 docker-basic
+# Tasks Docker basics
 
-1. docker-compose up --build
+- Create .dockerignore file and list all files that should be ignored by Docker
+- Create Dockerfile that will be used for building image of PostgreSQL database
+- Create Dockerfile that will be used for building image of express application
+- Create docker-compose.yml file that will be used for running multi-container application (express application and PostgreSQL database). Specify custom network that will be used for communication between application and database containers
+- Build images and scan it for security vulnerabilities
+- Push built images to your private repository on Docker Hub
+
+## To run the current application, do the following:
+
+### Install postreSQL. All database and server settings are in the file .env
+
+1. npm i
+2. docker-compose up --build
 
 ## Инструкция по запуску:
+
 - склонируй репозиторий git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
 - перейди в нужную ветку git checkout docker-basics
 - выполни установку зависимостей npm i
 - создай images и запусти на их основе контейнеры docker-compose up --build
-
-# RS School REST service
-
-## Prerequisites
-
-- Git - [Download & Install Git](https://git-scm.com/downloads).
-- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
 
 ## Downloading
 
@@ -35,7 +41,6 @@ npm start
 
 After starting the app on port (4000 as default) you can open
 in your browser OpenAPI documentation by typing http://localhost:4000/doc/.
-For more information about OpenAPI/Swagger please visit https://swagger.io/.
 
 ## Testing
 
@@ -65,18 +70,8 @@ To run only specific test suite with authorization (users, boards or tasks)
 npm run test:auth <suite name>
 ```
 
-## Development
-
-If you're using VSCode, you can get a better developer experience from integration with [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions.
-
 ### Auto-fix and format
 
 ```
 npm run lint
 ```
-
-### Debugging in VSCode
-
-Press <kbd>F5</kbd> to debug.
-
-For more information, visit: https://code.visualstudio.com/docs/editor/debugging
