@@ -1,11 +1,13 @@
 # Task 9 NestJS
+
 - склонируй репозиторий git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
 - перейди в нужную ветку git checkout nestJS
 - выполни установку зависимостей npm i
 
-** Проверь настройки своего сервера в .env файле
+\*\* Проверь настройки своего сервера в .env файле
 
 ПРОВЕРКА ЗАДАНИЯ
+
 1. В файле src\common\ormconfig.ts установи synchronize: true
 2. Выполни команду npm run start:dev
 3. Выполни npm run test:auth
@@ -22,21 +24,23 @@
 - npm run test:auth
 - npm run lint
 
-
 # Task 7 typeorm/posgres
+
 - склонируй репозиторий git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
 - перейди в нужную ветку git checkout postgresql/typeorm
 - выполни установку зависимостей npm i
 
-** Проверь настройки своего сервера в .env файле
+\*\* Проверь настройки своего сервера в .env файле
 
 ПРОВЕРКА ПЕРВОЙ ЧАСТИ ЗАДАНИЯ
+
 1. В файле src\common\ormconfig.ts установи synchronize: true
 2. Выполни команду npm start
 3. Выполни npm run test
 4. Выполни npm run lint
 
 ПРОВЕРКА ВТОРОЙ ЧАСТИ ЗАДАНИЯ
+
 1. В файле src\common\ormconfig.ts установи synchronize: false
 2. Измени любую сущность в любом из файлов в директории src\entities
 3. Выполни команду npm run gener(в директории src\migration появится файл с миграцией) выполнится скрипт migration:generate
@@ -44,6 +48,7 @@
 5. Выполни команду npm run unmig (команда - migration:revert)
 
 ЕСЛИ ЕСТЬ ЖЕЛАНИЕ, МОЖЕШЬ ВСЕ ТОЖЕ САМОЕ ПРОДЕЛАТЬ В КОНТЕЙНЕРАХ :-) НО ЭТОГО НЕТ В КРИТЕРИЯХ КРОСС ЧЕКА
+
 - docker-compose up
 
 # Tasks 6 docker-basic
@@ -51,6 +56,7 @@
 1. docker-compose up --build
 
 ## Инструкция по запуску:
+
 - склонируй репозиторий git clone https://github.com/HelloBro89/RS_School_Course_NodeJS2021.git
 - перейди в нужную ветку git checkout docker-basics
 - выполни установку зависимостей npm i
