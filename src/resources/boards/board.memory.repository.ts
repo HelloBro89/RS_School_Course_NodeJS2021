@@ -17,7 +17,6 @@ const createBoard = async (board: {
   title: string;
   columns: {}[];
 }) => {
-
   const boardsRepository = getRepository(Board);
   const newBoard = boardsRepository.create(board);
   const addedBoard = boardsRepository.save(newBoard);
@@ -34,13 +33,12 @@ const updateBoard = async (
 };
 
 const deleteBoard = async (id: string) => {
-
   const tasksRepository = getRepository(Task);
   const arrayOfTasks = await tasksRepository.find({ where: { boardId: id } });
   if (arrayOfTasks.length > 0) {
     for (let i = 0; i < arrayOfTasks.length; i += 1) {
       const idTasks = arrayOfTasks[i]!.id;
-      tasksRepository.delete(idTasks)
+      tasksRepository.delete(idTasks);
     }
   }
 
